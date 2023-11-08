@@ -75,34 +75,51 @@
 }
 
 
+
+
 .divboxinicio{
     display: flex;
 }
-.divboxinicio div a img{
+
+img{
     max-width: 100%;
-    justify-content: center;
 }
 .onebox{
-    max-width: 30%;
-    margin-left: 100px;
+    text-align: center;
 }
 .twobox{
-    max-width: 30%;
+    text-align: center;
 }
 .threebox{
-    max-width: 30%;
+    text-align: center;
 }
-.fourbox{
-    max-width: 10%;
-}
+
 /*FINAL BOXES PROMOCIONALES*/
 
 
 
 
 
+/*INICIO APARTADO INSTAGRAM*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas igualmente espaciadas */
+    gap: 10px; /* Espacio entre las cajas */
+    max-width: 100%; /* Ancho máximo del grid */
+    margin: 0 auto; /* Centrar el grid en la página */
+}
 
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
 
+.grid-item img {
+    max-width: 100%; /* Hacer las imágenes responsivas */
+    height: auto;
+}
+/*FINAL APARTADO INSTAGRAM*/
 
 
 

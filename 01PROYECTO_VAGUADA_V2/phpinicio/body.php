@@ -28,7 +28,7 @@
             </video>
             <!--Menú del HOME final-->
         </header>
-        <main>
+        <main class="maincontenedor1">
             <div id="separadordelvideo" class="divtituloinsta">
                 <h1 class="tituloinsta" id="novedades">NOVEDADES</h1>
             </div>
@@ -54,5 +54,34 @@
                 <div class="fourbox"><a href="/CarpetaRopa/ColecciónNiño/niño.html"><img src="./ARCHIVOS/fotos/boton-siguiente.png" alt=""></a></div>
             </div>
             <!--FINAL Contenedor de fotos Menu-->
+            <!--INICIO APARTADO INSTAGRAM-->
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="./ARCHIVOS/fotos/Grid_Insta/001.jpg" alt="Imagen 1">
+                </div>
+                <div class="grid-item">
+                    <img src="./ARCHIVOS/fotos/Grid_Insta/002.jpg" alt="Imagen 2">
+                </div>
+                <div class="grid-item">
+                    <img src="./ARCHIVOS/fotos/Grid_Insta/003.jpg" alt="Imagen 3">
+                </div>
+                <div class="grid-item">
+                    <img src="./ARCHIVOS/fotos/Grid_Insta/004.jpg" alt="Imagen 4">
+                </div>
+                <div class="grid-item">
+                    <img src="./ARCHIVOS/fotos/Grid_Insta/005.jpg" alt="Imagen 5">
+                </div>
+                <div class="grid-item">
+                    <img src="./ARCHIVOS/fotos/Grid_Insta/006.jpg" alt="Imagen 6">
+                </div>
+                <div class="grid-item">
+                    <img src="./ARCHIVOS/fotos/Grid_Insta/007.jpg" alt="Imagen 7">
+                </div>
+                <div class="grid-item">
+                    <img src="./ARCHIVOS/fotos/Grid_Insta/008.jpg" alt="Imagen 8">
+                </div>
+            </div>
+            <!--FINAL APARTADO INSTAGRAM-->
+
         </main>
     </body>
