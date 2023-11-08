@@ -1,0 +1,95 @@
+
+/* Estructura de estilo de menú INICIO*/
+/* Hay clases para el texto grande y pequeño del menú*/
+
+body {
+    background: #ffffff;
+}
+
+/*ESTILO MENÚ DEL HOME*/
+.menu {
+    padding-top: 12px;
+    list-style: none;
+    padding-left: 30px;    
+    max-width: 7%;
+    position: fixed;
+}
+
+.menu li a {
+    text-decoration: none;
+    color:#333;
+    padding-left: 5px;
+    padding-top: 10px;
+    display: block;
+}
+
+.menu li  {
+    image-resolution: 150%;
+    align-items: center;
+}
+
+.menu li a:hover {
+    color:rgb(75, 75, 75);
+}
+
+.menuAimg img {    /*Ajustes de la imagen del logo de SFERA*/
+    width: 130%;
+}
+
+.tamañomenu {
+    color: #333;
+    font-size: 150%;
+    font-family: Anton;
+    letter-spacing: 2px;
+}
+
+.tamañopequeño {
+    color: #333;
+    font-size: 10px;
+    font-family: Anton;
+    letter-spacing: 2px;
+}
+
+@font-face {   /*Estilo de fuente*/
+    font-family: Anton;
+    src: url(Anton/Anton.ttf);
+}
+/*FIN ESTILO MENÚ DEL HOME*/
+
+
+
+/*INICIO ESTILO MENÚ DE CATEGORÍAS*/
+.menu001 {
+    padding-top: 12px;
+    list-style: none;
+    padding-left: 30px;    
+    max-width: 7%;
+    position: fixed;
+}
+
+.menu001 li a {
+    text-decoration: none;
+    color:#333;
+    padding-left: 5px;
+    padding-top: 5px;
+    display: block;;
+}
+
+.menu001 li  {
+    image-resolution: 150%;
+}
+
+.menu001 li a:hover {
+    color:rgb(75, 75, 75);
+}
+/*FIN ESTILO MENÚ DE CATEGORÍAS*/
+
+
+
+
+.logotipoCentrado {
+    padding-top: 5px;
+    margin: auto;
+    display: block;
+    width: 30%;
+}

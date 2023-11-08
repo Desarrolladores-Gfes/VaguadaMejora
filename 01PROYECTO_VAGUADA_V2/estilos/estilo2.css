@@ -1,0 +1,166 @@
+/*
+.divboxinicio{
+    display: grid;
+    padding: 5% 10% 0 10%;
+}
+.titlebox{
+    grid-column: 1/3;
+    grid-row: 1;
+    font-family: "Anton";
+}
+.onebox{
+    grid-column: 1;
+    grid-row: 2/5;
+    text-align: center;
+}
+.onebox img{
+    max-width: 90%;
+}
+.onebox:hover{
+    opacity: 80%;
+}
+.twobox{
+    grid-column: 2;
+    grid-row: 2/5;
+    text-align: center;
+}
+.twobox img{
+    max-width: 90%;
+}
+.twobox:hover{
+    opacity: 80%;
+}
+.threebox{
+    grid-column: 3;
+    grid-row: 2/5;
+    text-align: center;
+}
+.threebox img{
+    max-width:  90%;
+}
+.threebox:hover{
+    opacity: 80%; 
+}
+.fourbox{
+    grid-column: 4;
+    grid-row: 3;
+    text-align: center;
+}
+.fourbox img{
+    max-width: 100%;
+}
+.fourbox:hover{
+    opacity: 80%;
+}                                                       
+.titulobox{
+    display: flex;
+    justify-content: center;    Centrar horizontalmente 
+}
+*/
+
+/*INICIO BOXES PROMOCIONALES*/
+.tituloinsta{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 50px 0;
+    font-size: 250%;
+}
+.titulobox{
+    margin: 0 0 50px 100px;
+}
+.titulobox a{  /*TEXTO CAMBIAR FUENTE*/
+    font-size: 150%;
+    text-decoration: none;
+    color: black;
+}
+
+
+.divboxinicio{
+    display: flex;
+}
+.divboxinicio div a img{
+    max-width: 100%;
+    justify-content: center;
+}
+.onebox{
+    max-width: 30%;
+    margin-left: 100px;
+}
+.twobox{
+    max-width: 30%;
+}
+.threebox{
+    max-width: 30%;
+}
+.fourbox{
+    max-width: 10%;
+}
+/*FINAL BOXES PROMOCIONALES*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*INICIO FOOTER*/
+.footercontenedor{
+    margin: 100px 0 0 0;
+}
+.footergeneral{
+    background-color:#9d6e4e;
+    height: 180px;
+    padding-bottom: 0;
+    margin-bottom: uj8;
+}
+.listadofooter{
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 50px;
+}
+.listadofooter li{
+    padding: 40px 60px 40px 20px;
+}
+.listadofooter2 li{
+    padding: 2px;
+    list-style: none;
+}
+.listadofooter2 a{
+    text-decoration: none;
+    color: rgb(255, 229, 189);
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
+}
+.listadofooter2 a:hover{
+    color: rgb(0, 0, 0);
+}
+.titulillo{
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
+}
+.imagendelfooter{
+    filter: invert(100%);
+}
+.imagendelfooter img{
+    max-width: 100px;
+}
+.imagendelfooter2 img{
+    max-width: 200px;
+}
+.divimagenpago{
+    padding: 40px 180px 0 0;
+    align-self: flex-start;
+}
+.listadofooter2 a{
+    text-decoration: none;
+    color: rgb(255, 229, 189);
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
+}
+.listadofooter2 a:hover{
+    color: rgb(0, 0, 0);
+}
+/*FIN FOOTER*/
