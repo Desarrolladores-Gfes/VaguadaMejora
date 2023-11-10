@@ -57,7 +57,7 @@
             <!--INICIO APARTADO INSTAGRAM-->
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="./ARCHIVOS/fotos/Grid_Insta/001.jpg" alt="Imagen 1">
+                    <a href="https://www.instagram.com/p/Cy6V2flvGGC/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/001.jpg" alt="Imagen 1"></a>
                 </div>
                 <div class="grid-item">
                     <img src="./ARCHIVOS/fotos/Grid_Insta/002.jpg" alt="Imagen 2">
