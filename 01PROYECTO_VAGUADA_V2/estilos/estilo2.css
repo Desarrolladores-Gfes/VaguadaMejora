@@ -115,7 +115,7 @@ img{
 }
 
 .grid-item img {
-    max-width: 100%; /* Hacer las imágenes responsivas */
+    max-width: 80%; /* Hacer las imágenes responsivas */
     height: auto;
 }
 /*FINAL APARTADO INSTAGRAM*/

@@ -11,6 +11,9 @@
     </head>
 
     <body>
+        <header>
+            
+        </header>
         <main>
             <?php
                 include("phpinicio/body.php");
@@ -18,9 +21,7 @@
         </main>
         <footer class="footercontenedor">
             <?php
-                
                 include("phpinicio/footer.php");
-
             ?>
         </footer>
     </body>

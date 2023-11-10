@@ -55,30 +55,33 @@
             </div>
             <!--FINAL Contenedor de fotos Menu-->
             <!--INICIO APARTADO INSTAGRAM-->
+            <div>
+                <h1>instagram</h1>
+            </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <a href="https://www.instagram.com/p/Cy6V2flvGGC/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/001.jpg" alt="Imagen 1"></a>
                 </div>
                 <div class="grid-item">
-                    <img src="./ARCHIVOS/fotos/Grid_Insta/002.jpg" alt="Imagen 2">
+                    <a href="https://www.instagram.com/p/Cy_mJBiLBZl/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/002.jpg" alt="Imagen 2"></a>
                 </div>
                 <div class="grid-item">
-                    <img src="./ARCHIVOS/fotos/Grid_Insta/003.jpg" alt="Imagen 3">
+                    <a href="https://www.instagram.com/p/Cy86kllhCzi/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/003.jpg" alt="Imagen 3"></a>
                 </div>
                 <div class="grid-item">
-                    <img src="./ARCHIVOS/fotos/Grid_Insta/004.jpg" alt="Imagen 4">
+                    <a href="https://www.instagram.com/p/CzMeHetsA83/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/004.jpg" alt="Imagen 4"></a>
                 </div>
                 <div class="grid-item">
-                    <img src="./ARCHIVOS/fotos/Grid_Insta/005.jpg" alt="Imagen 5">
+                    <a href="https://www.instagram.com/p/CzPC6-1poS_/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/005.jpg" alt="Imagen 5"></a>
                 </div>
                 <div class="grid-item">
-                    <img src="./ARCHIVOS/fotos/Grid_Insta/006.jpg" alt="Imagen 6">
+                    <a href="https://www.instagram.com/p/CzRFXkmIDYI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/006.jpg" alt="Imagen 6"></a>
                 </div>
                 <div class="grid-item">
-                    <img src="./ARCHIVOS/fotos/Grid_Insta/007.jpg" alt="Imagen 7">
+                    <a href="https://www.instagram.com/p/CzUMhcQtL_K/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/007.jpg" alt="Imagen 7"></a>
                 </div>
                 <div class="grid-item">
-                    <img src="./ARCHIVOS/fotos/Grid_Insta/008.jpg" alt="Imagen 8">
+                    <a href="https://www.instagram.com/p/CzW_BZGpgQl/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="><img src="./ARCHIVOS/fotos/Grid_Insta/008.jpg" alt="Imagen 8"></a>
                 </div>
             </div>
             <!--FINAL APARTADO INSTAGRAM-->
