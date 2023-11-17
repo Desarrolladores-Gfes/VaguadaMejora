@@ -2,32 +2,6 @@
         <link rel="stylesheet" type="text/css" href="./estilos/estilo.css"> 
     </head>
     <body>
-        <header>
-            <!--Menú del HOME inicio-->
-            <div class="Menuindex">
-                <nav class="navMenuHorizontal">
-                    <ul class="menuHorizontal">
-                        <li><a class="menuAimg" href="./index.html"><img src="./ARCHIVOS/fotos/sfera_logotipo.svg"></a></li>
-                        <div class="divmenuinicio">
-                            <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColeccionMujer/mujer.html">MUJER</a></li>
-                            <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColeccionHombre/hombre.html">HOMBRE</a></li>
-                            <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColecciónNiño/niño.html">INFANTIL</a></li>
-                            <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColecciónNiño/niño.html">INFORMACIÓN</a></li>
-                            <div class="inicioses">
-                                <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColecciónNiño/niño.html">INICIO DE SESIÓN</a></li>
-                                <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColecciónNiño/niño.html">REGISTRO</a></li>
-                            </div>
-                        </div>
-                        <li><a class="" href=""></a></li>
-                    </ul>
-                        
-                </nav>
-            </div>
-            <video class="videoinicio" autoplay loop muted>
-                <source src="./ARCHIVOS/videos/videoedited002.mp4" type="video/mp4" />
-            </video>
-            <!--Menú del HOME final-->
-        </header>
         <main class="maincontenedor1">
             <div id="separadordelvideo" class="divtituloinsta">
                 <h1 class="tituloinsta" id="novedades">novedades</h1>

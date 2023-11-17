@@ -58,6 +58,32 @@
 }
 */
 
+
+/*INICIO MENÚ INICIO*/
+
+.divmenuinicio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.divmenuinicio li{
+    list-style: none;
+    margin: 0 2% 0 2%;
+}
+.divmenuinicio li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.inicioses{
+    display: flex;
+    font-size: 15px;
+    padding-left: 10%;
+}
+/*FINAL MENÚ INICIO*/
+
 /*INICIO BOXES PROMOCIONALES*/
 .tituloinsta{
     display: flex;
