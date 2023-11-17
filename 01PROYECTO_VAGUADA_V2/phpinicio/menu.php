@@ -15,7 +15,7 @@
                         <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColeccionMujer/mujer.html">mujer</a></li>
                         <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColeccionHombre/hombre.html">hombre</a></li>
                         <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">infantil</a></li>
-                        <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">información</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "/Informacion001/comollegar.php">información</a></li>
                         <div class="inicioses">
                             <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">inicio de sesión</a></li>
                             <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">registro</a></li>
