@@ -85,6 +85,16 @@
 /*FINAL MENÚ INICIO*/
 
 /*INICIO BOXES PROMOCIONALES*/
+h1{
+    text-transform: uppercase;
+}
+h3{
+    text-transform: uppercase;
+    color: black;
+}
+a{
+    text-transform: uppercase;
+}
 
 .tituloinsta{
     display: flex;
@@ -121,7 +131,15 @@ img{
 .threebox{
     text-align: center;
 }
-
+.onebox a{
+    text-decoration: none;
+}
+.twobox a{
+    text-decoration: none;
+}
+.threebox a{
+    text-decoration: none;
+}
 h3{
     text-transform: uppercase;
 }
