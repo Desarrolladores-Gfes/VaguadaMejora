@@ -10,15 +10,15 @@
         <div class="menuIndex">
             <nav class="navMenuHorizontal">
                 <ul class="menuHorizontal">
-                    <li><a class="menuAimg" href="./index.html"><img src="./ARCHIVOS/fotos/sfera_logotipo.svg"></a></li>
+                    <li><a class="menuAimg" href="./index.php"><img src="./ARCHIVOS/fotos/sfera_logotipo.svg"></a></li>
                     <div class="divmenuinicio">
-                        <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColeccionMujer/mujer.html">mujer</a></li>
-                        <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColeccionHombre/hombre.html">hombre</a></li>
-                        <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">infantil</a></li>
-                        <li><a class="menuHorizontal001" id="upp" href= "/Informacion001/comollegar.php">información</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "CarpetaRopa/ColeccionMujer/mujer.php">mujer</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "CarpetaRopa/ColeccionHombre/hombre.php">hombre</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "CarpetaRopa/ColecciónNiño/niño.php">infantil</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "Informacion001/comollegar.php">información</a></li>
                         <div class="inicioses">
-                            <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">inicio de sesión</a></li>
-                            <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">registro</a></li>
+                            <li><a class="menuHorizontal001" id="upp" href= "phplogin/login.php">inicio de sesión</a></li>
+                            <li><a class="menuHorizontal001" id="upp" href= "phplogin/login.php">registro</a></li>
                         </div>
                     </div>
                     <li><a class="" href=""></a></li>
