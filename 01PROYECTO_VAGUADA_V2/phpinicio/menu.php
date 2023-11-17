@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <li><a class="" href=""></a></li>
-                </ul>  
+                </ul>
             </nav>
         </div>
         <video class="videoinicio" autoplay loop muted>
@@ -31,4 +31,3 @@
     </header>
 </body>
 </html>
-
