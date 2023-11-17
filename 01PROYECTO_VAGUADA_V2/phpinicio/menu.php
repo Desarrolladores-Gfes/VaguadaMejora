@@ -12,13 +12,13 @@
                 <ul class="menuHorizontal">
                     <li><a class="menuAimg" href="./index.html"><img src="./ARCHIVOS/fotos/sfera_logotipo.svg"></a></li>
                     <div class="divmenuinicio">
-                        <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColeccionMujer/mujer.html">mujer</a></li>
-                        <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColeccionHombre/hombre.html">hombre</a></li>
-                        <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColecciónNiño/niño.html">infantil</a></li>
-                        <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColecciónNiño/niño.html">información</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColeccionMujer/mujer.html">mujer</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColeccionHombre/hombre.html">hombre</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">infantil</a></li>
+                        <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">información</a></li>
                         <div class="inicioses">
-                            <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColecciónNiño/niño.html">inicio de sesión</a></li>
-                            <li><a class="menuHorizontal001" href= "/CarpetaRopa/ColecciónNiño/niño.html">registro</a></li>
+                            <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">inicio de sesión</a></li>
+                            <li><a class="menuHorizontal001" id="upp" href= "/CarpetaRopa/ColecciónNiño/niño.html">registro</a></li>
                         </div>
                     </div>
                     <li><a class="" href=""></a></li>
