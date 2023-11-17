@@ -85,6 +85,10 @@
 /*FINAL MENÚ INICIO*/
 
 /*INICIO BOXES PROMOCIONALES*/
+h3{
+    text-transform: uppercase;
+}
+
 .tituloinsta{
     display: flex;
     justify-content: center;
