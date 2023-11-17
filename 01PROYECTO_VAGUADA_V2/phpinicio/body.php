@@ -1,5 +1,6 @@
     <head>
-        <link rel="stylesheet" type="text/css" href="./estilos/estilo.css"> 
+        <link rel="stylesheet" type="text/css" href="./estilos/estilo.css">
+        <link rel="stylesheet" type="text/css" href="./estilos/estilo2.css"> 
     </head>
     <body>
         <main class="maincontenedor1">
