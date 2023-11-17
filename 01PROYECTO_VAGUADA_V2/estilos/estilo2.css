@@ -58,6 +58,14 @@
 }
 */
 
+/*INICIO MENÚ PRINCIPAL*/
+.divmenuinicio{
+    text-transform: uppercase;
+}
+
+
+/*FINAL MENÚ PRINCIPAL*/
+
 /*INICIO BOXES PROMOCIONALES*/
 .tituloinsta{
     display: flex;
@@ -93,6 +101,10 @@ img{
 }
 .threebox{
     text-align: center;
+}
+
+h3{
+    text-transform: uppercase;
 }
 
 /*FINAL BOXES PROMOCIONALES*/
