@@ -140,44 +140,6 @@ h3{
 /*FINAL BOXES PROMOCIONALES*/
 
 
-/*INICIO APARTADO INSTAGRAM*/
-.tituloinstagram{
-    margin-top: 200px;
-    margin: 200px 0 100px 0;
-    display: flex;
-    justify-content: center;
-}
-.tituloinstagram h1{
-    text-transform: uppercase;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 33%); /* 2 columnas igualmente espaciadas */
-    gap: 20px; /* Espacio entre las cajas */
-    max-width: 90%; /* Ancho máximo del grid */
-    margin: 0 auto; /* Centrar el grid en la página */
-}
-
-.grid-item {
-    padding: 10px;
-    text-align: center;
-}
-
-.grid-item img {
-    border-radius: 1000px;
-    max-width: 80%; /* Hacer las imágenes responsivas */
-    height: auto;
-}
-.grid-item img:hover {
-    opacity: 50%;
-}
-/*FINAL APARTADO INSTAGRAM*/
-
-
-
-
-
 /*INICIO FOOTER*/
 .footercontenedor{
     margin: 100px 0 0 0;
