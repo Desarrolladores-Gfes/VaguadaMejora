@@ -60,7 +60,11 @@
 
 
 /*INICIO MENÚ INICIO*/
-
+.menuIndex{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
 .divmenuinicio{
     display: flex;
     justify-content: center;
@@ -81,6 +85,11 @@
     display: flex;
     font-size: 15px;
     padding-left: 10%;
+}
+
+.videoinicio{
+    width: 100%;
+    margin-top: 80px;
 }
 /*FINAL MENÚ INICIO*/
 
