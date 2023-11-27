@@ -58,6 +58,25 @@
 }
 */
 
+/*INICIO estilo.css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,224,212,1) 25%, rgba(230,204,178,1) 50%, rgba(221,184,146,1) 75%, rgba(186,156,125,1) 100%);   
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('./') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real a tu fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+/*FINAL estilo.css*/
 
 /*INICIO MENÚ INICIO*/
 .menuIndex{
