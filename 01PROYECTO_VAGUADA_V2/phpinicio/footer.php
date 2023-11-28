@@ -7,7 +7,7 @@
             <ul class="listadofooter">
                 <div class="divimagenpago">
                     <div class="imagendelfooter"><img src="http://drive.google.com/uc?export=view&id=1HfDVnQH-DOfovq9Izt3dt-GaddDt5BKd" alt=""></div>
-                    <div class="imagendelfooter2"><img src="./ARCHIVOS/fotos/pngpagoseguro.png" alt=""></div>
+                    <div class="imagendelfooter2"><img src="http://drive.google.com/uc?export=view&id=1InEDxpdpFzDm9zc4s0j-KF_AQGf3R2Zp" alt=""></div>
                 </div>
                 <li><div class="listadofooter2">
                     <ul>
