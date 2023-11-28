@@ -30,16 +30,16 @@
     margin: 0 10px 0 10px;
 }
 .letramenu a{
-    margin-top: 35px;
+    margin-top: 30px;
+    font-style: none;
 }
 
 
 .videoinicio{
     margin-top: 80px;
-}
-.videoinicio source{
     width: 100%;
 }
+
 /*FINAL MENÚ INICIO*/
 
 /*INICIO FOOTER*/
@@ -89,4 +89,3 @@
     align-self: flex-start;
 }
 /*FIN FOOTER*/
-:right

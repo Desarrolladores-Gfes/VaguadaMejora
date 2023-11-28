@@ -46,7 +46,7 @@
                 echo "</div>";
             }
         } else {
-            header("Location: error404.html");
+            header("Location: error404.php");
             exit();
         }
 
