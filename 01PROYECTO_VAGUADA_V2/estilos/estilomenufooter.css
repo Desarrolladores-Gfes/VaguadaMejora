@@ -50,8 +50,6 @@
 .footergeneral{
     background-color:#9d6e4e;
     height: 180px;
-    padding-bottom: 0;
-    margin-bottom: uj8;
 }
 .listadofooter{
     list-style: none;
@@ -90,12 +88,5 @@
     padding: 40px 180px 0 0;
     align-self: flex-start;
 }
-.listadofooter2 a{
-    text-decoration: none;
-    color: rgb(255, 229, 189);
-    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
-}
-.listadofooter2 a:hover{
-    color: rgb(0, 0, 0);
-}
 /*FIN FOOTER*/
+:right
