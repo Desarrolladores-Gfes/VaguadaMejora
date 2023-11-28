@@ -34,10 +34,11 @@
 }
 
 
-
 .videoinicio{
-    max-width: 100%;
     margin-top: 80px;
+}
+.videoinicio source{
+    width: 100%;
 }
 /*FINAL MENÚ INICIO*/
 
