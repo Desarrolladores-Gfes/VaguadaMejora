@@ -6,7 +6,7 @@
         <div class="footergeneral">
             <ul class="listadofooter">
                 <div class="divimagenpago">
-                    <div class="imagendelfooter"><img src="./ARCHIVOS/fotos/sfera_logotipo002.png" alt=""></div>
+                    <div class="imagendelfooter"><img src="http://drive.google.com/uc?export=view&id=1HfDVnQH-DOfovq9Izt3dt-GaddDt5BKd" alt=""></div>
                     <div class="imagendelfooter2"><img src="./ARCHIVOS/fotos/pngpagoseguro.png" alt=""></div>
                 </div>
                 <li><div class="listadofooter2">
