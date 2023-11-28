@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="./estilos/estilo2.css">
+
 </head>
 <main>
 <footer class="footercontenedor">

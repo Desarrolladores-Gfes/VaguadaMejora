@@ -78,40 +78,6 @@ body {
 }
 /*FINAL estilo.css*/
 
-/*INICIO MENÚ INICIO*/
-.menuIndex{
-    position: fixed;
-    background-color: white;
-    width: 100%;
-}
-.divmenuinicio{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-}
-.divmenuinicio li{
-    list-style: none;
-    margin: 0 2% 0 2%;
-}
-.divmenuinicio li a{
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
-.inicioses{
-    display: flex;
-    font-size: 15px;
-    padding-left: 10%;
-}
-
-.videoinicio{
-    width: 100%;
-    margin-top: 80px;
-}
-/*FINAL MENÚ INICIO*/
-
 /*INICIO BOXES PROMOCIONALES*/
 #upp{
     text-transform: uppercase;
@@ -166,61 +132,3 @@ h3{
 }
 
 /*FINAL BOXES PROMOCIONALES*/
-
-
-/*INICIO FOOTER*/
-.footercontenedor{
-    margin: 100px 0 0 0;
-}
-.footergeneral{
-    background-color:#9d6e4e;
-    height: 180px;
-    padding-bottom: 0;
-    margin-bottom: uj8;
-}
-.listadofooter{
-    list-style: none;
-    color: white;
-    display: flex;
-    padding-left: 50px;
-}
-.listadofooter li{
-    padding: 40px 60px 40px 20px;
-}
-.listadofooter2 li{
-    padding: 2px;
-    list-style: none;
-}
-.listadofooter2 a{
-    text-decoration: none;
-    color: rgb(255, 229, 189);
-    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
-}
-.listadofooter2 a:hover{
-    color: rgb(0, 0, 0);
-}
-.titulillo{
-    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
-}
-.imagendelfooter{
-    filter: invert(100%);
-}
-.imagendelfooter img{
-    max-width: 100px;
-}
-.imagendelfooter2 img{
-    max-width: 200px;
-}
-.divimagenpago{
-    padding: 40px 180px 0 0;
-    align-self: flex-start;
-}
-.listadofooter2 a{
-    text-decoration: none;
-    color: rgb(255, 229, 189);
-    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
-}
-.listadofooter2 a:hover{
-    color: rgb(0, 0, 0);
-}
-/*FIN FOOTER*/

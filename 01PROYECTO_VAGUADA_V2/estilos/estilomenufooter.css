@@ -1,0 +1,95 @@
+/*INICIO MENÚ INICIO*/
+.menuIndex{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+}
+.menuAimg img{
+    width: 180px;
+    margin-top: 10px;
+}
+.menuHorizontal {
+    list-style: none;  /* Elimina los puntos de la lista */
+    display: flex;
+}
+.menuHorizontal li {
+    margin: 0 10px;  /* Espaciado entre elementos de la lista */
+}
+
+.divmenuinicio {
+    width: 100%;
+    display: flex;
+    margin-left: 50%;
+}
+.divmenuinicio a{
+    margin: 0 10px 0 10px;
+}
+.letramenu a{
+    margin-top: 35px;
+}
+
+
+
+.videoinicio{
+    width: 100%;
+    margin-top: 80px;
+}
+/*FINAL MENÚ INICIO*/
+
+/*INICIO FOOTER*/
+.footercontenedor{
+    margin: 100px 0 0 0;
+}
+.footergeneral{
+    background-color:#9d6e4e;
+    height: 180px;
+    padding-bottom: 0;
+    margin-bottom: uj8;
+}
+.listadofooter{
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 50px;
+}
+.listadofooter li{
+    padding: 40px 60px 40px 20px;
+}
+.listadofooter2 li{
+    padding: 2px;
+    list-style: none;
+}
+.listadofooter2 a{
+    text-decoration: none;
+    color: rgb(255, 229, 189);
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
+}
+.listadofooter2 a:hover{
+    color: rgb(0, 0, 0);
+}
+.titulillo{
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
+}
+.imagendelfooter{
+    filter: invert(100%);
+}
+.imagendelfooter img{
+    max-width: 100px;
+}
+.imagendelfooter2 img{
+    max-width: 200px;
+}
+.divimagenpago{
+    padding: 40px 180px 0 0;
+    align-self: flex-start;
+}
+.listadofooter2 a{
+    text-decoration: none;
+    color: rgb(255, 229, 189);
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
+}
+.listadofooter2 a:hover{
+    color: rgb(0, 0, 0);
+}
+/*FIN FOOTER*/
