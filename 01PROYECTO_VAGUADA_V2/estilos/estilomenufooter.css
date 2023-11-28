@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /*INICIO MENÚ INICIO*/
 .menuIndex{
     position: fixed;
@@ -32,7 +36,7 @@
 
 
 .videoinicio{
-    width: 100%;
+    max-width: 100%;
     margin-top: 80px;
 }
 /*FINAL MENÚ INICIO*/
@@ -40,6 +44,7 @@
 /*INICIO FOOTER*/
 .footercontenedor{
     margin: 100px 0 0 0;
+    width: 100%;
 }
 .footergeneral{
     background-color:#9d6e4e;
