@@ -8,7 +8,7 @@
     <header>
         <div class="menuIndex">
             <ul class="menuHorizontal">
-                <li><a class="menuAimg" href="./index.php"><img src="./ARCHIVOS/fotos/sfera_logotipo.svg"></a></li>
+                <li><a class="menuAimg" href="./index.php"><img src="http://drive.google.com/uc?export=view&id=16GcTpZ6uZwp-5B5HXMWsJVPAF8TOMUA8" alt=""></a></li>
                 <li class="letramenu" >
                     <div class="divmenuinicio">
                         <a class="menuHorizontal001" id="upp" href= "CarpetaRopa/ColeccionMujer/mujer.php">mujer</a>
@@ -22,9 +22,6 @@
                 <li><a class="" href=""></a></li>
             </ul>
         </div>
-        <video class="videoinicio" autoplay loop muted>
-            <source src="./ARCHIVOS/videos/videoedited002.mp4" type="video/mp4" />
-        </video>
     </header>
 </body>
 </html>
