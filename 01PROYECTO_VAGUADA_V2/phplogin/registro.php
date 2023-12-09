@@ -46,19 +46,24 @@
 <body>
     <h2>Formulario de Registro</h2>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-        <label for="name">Nombre:</label>
+    
+        <div style="display: flex;">
+            <p>Todos los campos con <span style="color: red;">*</span> son obligatorios</p>
+        </div>
+
+        <label for="name"><span style="color: red;">*</span>Nombre:</label>
         <input type="text" name="name" required><br><br>
 
-        <label for="username">Nombre de Usuario:</label>
+        <label for="username"><span style="color: red;">*</span>Nombre de Usuario:</label>
         <input type="text" name="username" required><br><br>
 
-        <label for="password">Contraseña:</label>
+        <label for="password"><span style="color: red;">*</span>Contraseña:</label>
         <input type="password" name="password" required><br><br>
 
-        <label for="email">Correo Electrónico:</label>
+        <label for="email"><span style="color: red;">*</span>Correo Electrónico:</label>
         <input type="email" name="email" required><br><br>
 
-        <label for="tlfnumber">Número de Teléfono:</label>
+        <label for="tlfnumber"><span style="color: red;">*</span>Número de Teléfono:</label>
         <input type="text" name="tlfnumber" required><br><br>
 
         <input type="submit" name="submit" value="Registrarse">
@@ -100,7 +105,7 @@
 
     // Cierra la conexión a la base de datos
     mysqli_close($conexion);
-?>
+    ?>
 
 
 </body>

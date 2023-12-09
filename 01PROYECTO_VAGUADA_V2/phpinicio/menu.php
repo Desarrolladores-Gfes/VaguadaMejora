@@ -16,7 +16,7 @@
                         <a class="menuHorizontal001" id="upp" href= "CarpetaRopa/ColecciónNiño/niño.php">infantil</a>
                         <a class="menuHorizontal001" id="upp" href= "Informacion001/comollegar.php">información</a>
                         <a class="menuHorizontal001" id="upp" href= "phplogin/login.php">inicio de sesión</a>
-                        <a class="menuHorizontal001" id="upp" href= "phplogin/login.php">registro</a>
+                        <a class="menuHorizontal001" id="upp" href= "phplogin/registro.php">registro</a>
                     </div>
                 </li>
                 <li><a class="" href=""></a></li>
