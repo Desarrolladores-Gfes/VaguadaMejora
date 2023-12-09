@@ -3,12 +3,12 @@ main img{
     height: auto;
 }
 
-main button{
+.botonerror404{
     position: absolute;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
     background-color:rgb(144, 77, 1);
     color: #fff;
     border: none;
@@ -17,8 +17,15 @@ main button{
     width: 300px;
     height: 80px;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-main button:hover{
+.botonerror404 p{
+    padding: 18px;
+}
+.botonerror404:hover{
     background-color: rgb(81, 43, 0);
 }

@@ -24,7 +24,9 @@
 .divmenuinicio {
     width: 100%;
     display: flex;
-    margin-left: 50%;
+
+
+    text-transform: uppercase;
 }
 .divmenuinicio a{
     margin: 0 10px 0 10px;
