@@ -1,6 +1,3 @@
-<head>
-
-</head>
 <main>
     <footer class="footercontenedor">
         <div class="footergeneral">
