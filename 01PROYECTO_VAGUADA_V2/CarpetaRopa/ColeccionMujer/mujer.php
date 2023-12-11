@@ -101,8 +101,6 @@
             }
 
             echo '</div>';
-
-            // Cerrar la conexión a la base de datos
             $conn->close();
         ?>
 
@@ -110,7 +108,7 @@
 </body>
 <footer class="footercontenedor">
     <?php
-        include("../phpblocks/footer.php");
+        include("../../phpinicio/footer.php");
     ?>
 </footer>
 </html>
