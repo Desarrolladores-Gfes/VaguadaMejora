@@ -17,7 +17,7 @@
     list-style: none;  /* Elimina los puntos de la lista */
     display: flex;
 }
-.menuHorizontal li {
+.menuHorizontal li {      
     margin: 0 10px;  /* Espaciado entre elementos de la lista */
 }
 

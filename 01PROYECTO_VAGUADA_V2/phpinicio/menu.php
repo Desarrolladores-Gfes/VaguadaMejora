@@ -15,8 +15,20 @@
                         <a class="menuHorizontal001" id="upp" href= "CarpetaRopa/ColeccionHombre/hombre.php">hombre</a>
                         <a class="menuHorizontal001" id="upp" href= "CarpetaRopa/ColecciónNiño/niño.php">infantil</a>
                         <a class="menuHorizontal001" id="upp" href= "Informacion001/comollegar.php">información</a>
-                        <a class="menuHorizontal001" id="upp" href= "phplogin/login.php">inicio de sesión</a>
-                        <a class="menuHorizontal001" id="upp" href= "phplogin/registro.php">registro</a>
+                        <?php
+                            // Inicia la sesión (esto debe ir al inicio de tu archivo PHP)
+                            session_start();
+
+                            // Verifica si el usuario ha iniciado sesión
+                            if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+                                // Muestra el mensaje de bienvenida con el nombre del usuario
+                                echo '<a class="menuHorizontal001" href= "./paginasprincipales/configuser.php">Bienvenido: ' . $_SESSION['user_name'] . '</a>';
+                            } else {
+                                // Si no ha iniciado sesión, muestra los enlaces de inicio de sesión y registro
+                                echo '<a class="menuHorizontal001" id="upp" href= "phplogin/login.php">inicio de sesión</a>';
+                                echo '<a class="menuHorizontal001" id="upp" href= "phplogin/registro.php">registro</a>';
+                            }
+                        ?>
                     </div>
                 </li>
                 <li><a class="" href=""></a></li>
