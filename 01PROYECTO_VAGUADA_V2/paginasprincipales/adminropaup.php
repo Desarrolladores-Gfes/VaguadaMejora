@@ -4,117 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" type="text/css" href="./estiloespeciales.css">
     <link rel="stylesheet" type="text/css" href="../estilos/estilomenufooter.css">
 </head>
 <body>
     <header>
-        <p>MENÚ PERSONALIZADO PARA ADMIN</p>
+        <?php
+            $rutaFoto = "./index.php";
+            $ruta = "./CarpetaRopa/ColeccionMujer/mujer.php";
+            $ruta1 = "./CarpetaRopa/ColeccionHombre/hombre.php";
+            $ruta2 = "./CarpetaRopa/ColecciónNiño/niño.php";
+            $ruta3 = "./Informacion001/comollegar.php";
+            include("../paginasprincipales/menuadmin.php");
+        ?>
     </header>
     <main class="maininsertar" >
-        <div class="divinicioinsertar">
-            <h1></h1>
-        </div>
         <div class="divinsertar" >
-        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" enctype="multipart/form-data">
-            <div>
-                <h3>Requisitos obligatorios</h3><h3>*</h3>
-            </div>
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" enctype="multipart/form-data">
+                <div>
+                    <h3>Requisitos obligatorios <span style="color: red;">*</span></h3>
+                </div>
 
-            <div class="textfielduno">
-                <label for="nombre_producto">Nombre del producto:</label>
-                <input type="text" name="nombre_producto" class="form-control" required>
-            </div>
+                <div class="textfielduno">
+                    <label for="nombre_producto">Nombre del producto:</label>
+                    <input type="text" name="nombre_producto" class="form-control" required>
+                </div>
 
-            <div class="textfielddos">
-                <label for="descripcion_producto">Descripción del producto:</label>
-                <textarea name="descripcion_producto" class="form-control" rows="4" required></textarea>
-            </div>
+                <div class="textfielddos">
+                    <label for="descripcion_producto">Descripción del producto:</label>
+                    <textarea name="descripcion_producto" class="form-control" rows="4" required></textarea>
+                </div>
 
-            <div class="textfieldtres">
-                <label for="precio_producto">Precio del producto:</label>
-                <input type="number" name="precio_producto" class="form-control" step="0.01" required>
-            </div>
+                <div class="textfieldtres">
+                    <label for="precio_producto">Precio del producto:</label>
+                    <input type="number" name="precio_producto" class="form-control" step="0.01" required>
+                </div>
 
-            <div class="checkbox-container">
-                <label for="mujerCheckbox">Mujer</label>
-                <input type="checkbox" id="mujerCheckbox" name="mujer" value="1" onchange="updateSelection('mujerCheckbox')">
-                
-                <label for="hombreCheckbox">Hombre</label>
-                <input type="checkbox" id="hombreCheckbox" name="hombre" value="1" onchange="updateSelection('hombreCheckbox')">
-                
-                <label for="infantilCheckbox">Infantil</label>
-                <input type="checkbox" id="infantilCheckbox" name="infantil" value="1" onchange="updateSelection('infantilCheckbox')">
-            </div>
+                <div class="checkbox-container">
+                    <label for="mujerCheckbox">Mujer</label>
+                    <input type="checkbox" id="mujerCheckbox" name="mujer" value="1" onchange="updateSelection('mujerCheckbox')">
+                    
+                    <label for="hombreCheckbox">Hombre</label>
+                    <input type="checkbox" id="hombreCheckbox" name="hombre" value="1" onchange="updateSelection('hombreCheckbox')">
+                    
+                    <label for="infantilCheckbox">Infantil</label>
+                    <input type="checkbox" id="infantilCheckbox" name="infantil" value="1" onchange="updateSelection('infantilCheckbox')">
+                </div>
 
-            <script>
-                function updateSelection(checkboxId) {
-                    var checkbox = document.getElementById(checkboxId);
-                    var checkboxes = document.getElementsByName(checkbox.name);
+                <script>
+                    function updateSelection(checkboxId) {
+                        var checkbox = document.getElementById(checkboxId);
+                        var checkboxes = document.getElementsByName(checkbox.name);
 
-                    // Si el checkbox está marcado, establece su valor a 1, de lo contrario, a 0
-                    var value = checkbox.checked ? 1 : 0;
+                        // Si el checkbox está marcado, establece su valor a 1, de lo contrario, a 0
+                        var value = checkbox.checked ? 1 : 0;
 
-                    // Desmarca los demás checkboxes y establece su valor a 0
-                    checkboxes.forEach(function(currentCheckbox) {
-                        if (currentCheckbox !== checkbox) {
-                            currentCheckbox.checked = false;
-                            currentCheckbox.value = 0; // Establece el valor a 0 para los demás checkboxes
-                        }
-                    });
+                        // Desmarca los demás checkboxes y establece su valor a 0
+                        checkboxes.forEach(function(currentCheckbox) {
+                            if (currentCheckbox !== checkbox) {
+                                currentCheckbox.checked = false;
+                                currentCheckbox.value = 0; // Establece el valor a 0 para los demás checkboxes
+                            }
+                        });
 
-                    // Establece el valor del checkbox actual
-                    checkbox.value = value;
-                }
-            </script>
+                        // Establece el valor del checkbox actual
+                        checkbox.value = value;
+                    }
+                </script>
 
+                <div class="textfieldcuatro">
+                    <label for="imagen_1">Imagen 1:</label>
+                    <input type="file" name="imagen_1" class="form-control-file" accept="image/*" required>
+                </div>
 
-            <div class="textfieldcuatro">
-                <label for="imagen_1">Imagen 1:</label>
-                <input type="file" name="imagen_1" class="form-control-file" accept="image/*" required>
-            </div>
+                <div class="textfieldcinco">
+                    <label for="imagen_2">Imagen 2:</label>
+                    <input type="file" name="imagen_2" class="form-control-file" accept="image/*" required>
+                </div>
 
-            <div class="textfieldcinco">
-                <label for="imagen_2">Imagen 2:</label>
-                <input type="file" name="imagen_2" class="form-control-file" accept="image/*" required>
-            </div>
+                <div class="textfieldseis">
+                    <label for="imagen_3">Imagen 3:</label>
+                    <input type="file" name="imagen_3" class="form-control-file" accept="image/*">
+                </div>
 
-            <div class="textfieldseis">
-                <label for="imagen_3">Imagen 3:</label>
-                <input type="file" name="imagen_3" class="form-control-file" accept="image/*">
-            </div>
+                <div class="textfieldseis">
+                    <label for="imagen_4">Imagen 4:</label>
+                    <input type="file" name="imagen_4" class="form-control-file" accept="image/*">
+                </div>
 
-            <div class="textfieldseis">
-                <label for="imagen_4">Imagen 4:</label>
-                <input type="file" name="imagen_4" class="form-control-file" accept="image/*">
-            </div>
+                <div class="textfieldseis">
+                    <label for="imagen_5">Imagen 5:</label>
+                    <input type="file" name="imagen_5" class="form-control-file" accept="image/*">
+                </div>
 
-            <div class="textfieldseis">
-                <label for="imagen_5">Imagen 5:</label>
-                <input type="file" name="imagen_5" class="form-control-file" accept="image/*">
-            </div>
+                <div class="textfieldseis">
+                    <label for="imagen_6">Imagen 6:</label>
+                    <input type="file" name="imagen_6" class="form-control-file" accept="image/*">
+                </div>
 
-            <div class="textfieldseis">
-                <label for="imagen_6">Imagen 6:</label>
-                <input type="file" name="imagen_6" class="form-control-file" accept="image/*">
-            </div>
+                <div class="textfieldseis">
+                    <label for="imagen_7">Imagen 7:</label>
+                    <input type="file" name="imagen_7" class="form-control-file" accept="image/*">
+                </div>
 
-            <div class="textfieldseis">
-                <label for="imagen_7">Imagen 7:</label>
-                <input type="file" name="imagen_7" class="form-control-file" accept="image/*">
-            </div>
+                <div class="textfieldseis">
+                    <label for="imagen_8">Imagen 8:</label>
+                    <input type="file" name="imagen_8" class="form-control-file" accept="image/*">
+                </div>
 
-            <div class="textfieldseis">
-                <label for="imagen_8">Imagen 8:</label>
-                <input type="file" name="imagen_8" class="form-control-file" accept="image/*">
-            </div>
-
-            <div class="textfieldsiete">
-                <input type="submit" value="Enviar" class="btn btn-primary">
-            </div>
-        </form>
-
+                <div class="textfieldsiete">
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </div>
+            </form>
         </div>
+
         <?php
             $host = "localhost";
             $usuario = "root";
@@ -178,9 +181,7 @@
 
             // Cerrar la conexión a la base de datos
             $conn->close();
-            ?>
-
-
+        ?>
     </main>
     <footer class="footercontenedor" >
         <?php

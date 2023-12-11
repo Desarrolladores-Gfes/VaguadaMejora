@@ -1,3 +1,4 @@
+/*INICIO ERROR 404*/
 main img{
     width: 100%;
     height: auto;
@@ -29,3 +30,11 @@ main img{
 .botonerror404:hover{
     background-color: rgb(81, 43, 0);
 }
+/*FIN ERROR 404*/
+
+/*INICIO ADMINROPAUP.PHP*/
+.maininsertar{
+    padding-top: 100px;
+    justify-content: center;
+}
+/*FIN ADMINROPAUP.PHP*/
