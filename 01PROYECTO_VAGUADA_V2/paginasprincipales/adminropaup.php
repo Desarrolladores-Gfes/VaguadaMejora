@@ -36,6 +36,39 @@
                 <input type="number" name="precio_producto" class="form-control" step="0.01" required>
             </div>
 
+            <div class="checkbox-container">
+                <label for="mujerCheckbox">Mujer</label>
+                <input type="checkbox" id="mujerCheckbox" name="mujer" value="1" onchange="updateSelection('mujerCheckbox')">
+                
+                <label for="hombreCheckbox">Hombre</label>
+                <input type="checkbox" id="hombreCheckbox" name="hombre" value="1" onchange="updateSelection('hombreCheckbox')">
+                
+                <label for="infantilCheckbox">Infantil</label>
+                <input type="checkbox" id="infantilCheckbox" name="infantil" value="1" onchange="updateSelection('infantilCheckbox')">
+            </div>
+
+            <script>
+                function updateSelection(checkboxId) {
+                    var checkbox = document.getElementById(checkboxId);
+                    var checkboxes = document.getElementsByName(checkbox.name);
+
+                    // Si el checkbox está marcado, establece su valor a 1, de lo contrario, a 0
+                    var value = checkbox.checked ? 1 : 0;
+
+                    // Desmarca los demás checkboxes y establece su valor a 0
+                    checkboxes.forEach(function(currentCheckbox) {
+                        if (currentCheckbox !== checkbox) {
+                            currentCheckbox.checked = false;
+                            currentCheckbox.value = 0; // Establece el valor a 0 para los demás checkboxes
+                        }
+                    });
+
+                    // Establece el valor del checkbox actual
+                    checkbox.value = value;
+                }
+            </script>
+
+
             <div class="textfieldcuatro">
                 <label for="imagen_1">Imagen 1:</label>
                 <input type="file" name="imagen_1" class="form-control-file" accept="image/*" required>
@@ -43,7 +76,7 @@
 
             <div class="textfieldcinco">
                 <label for="imagen_2">Imagen 2:</label>
-                <input type="file" name="imagen_2" class="form-control-file" accept="image/*">
+                <input type="file" name="imagen_2" class="form-control-file" accept="image/*" required>
             </div>
 
             <div class="textfieldseis">
@@ -88,7 +121,6 @@
             $contrasena = "";
             $base_datos = "bdvaguada";
 
-
             $conn = new mysqli($host, $usuario, $contrasena, $base_datos);
 
             // Verificar la conexión
@@ -96,17 +128,19 @@
                 die("Error de conexión: " . $conn->connect_error);
             }
 
-            // Verificar si el formulario se envió
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                // Recoger los datos del formulario
                 $nombre_producto = $_POST["nombre_producto"];
                 $descripcion_producto = $_POST["descripcion_producto"];
                 $precio_producto = $_POST["precio_producto"];
+                $seleccion_mujer = isset($_POST["mujer"]) ? 1 : 0;
+                $seleccion_hombre = isset($_POST["hombre"]) ? 1 : 0;
+                $seleccion_infantil = isset($_POST["infantil"]) ? 1 : 0;
+
 
                 // Preparar la consulta SQL para insertar datos del producto
-                $query = "INSERT INTO productos (nombre_producto, descripcion_producto, precio_producto) VALUES (?, ?, ?)";
+                $query = "INSERT INTO productos (nombre_producto, descripcion_producto, precio_producto, mujer, hombre, infantil) VALUES (?, ?, ?, ?, ?, ?)";
                 $stmt = $conn->prepare($query);
-                $stmt->bind_param("ssd", $nombre_producto, $descripcion_producto, $precio_producto);
+                $stmt->bind_param("ssdiii", $nombre_producto, $descripcion_producto, $precio_producto, $seleccion_mujer, $seleccion_hombre, $seleccion_infantil);
 
                 // Ejecutar la consulta SQL para insertar datos del producto
                 if ($stmt->execute()) {
@@ -144,7 +178,8 @@
 
             // Cerrar la conexión a la base de datos
             $conn->close();
-        ?>
+            ?>
+
 
     </main>
     <footer class="footercontenedor" >

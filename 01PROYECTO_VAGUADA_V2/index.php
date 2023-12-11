@@ -12,6 +12,11 @@
 <body>
     <header>
         <?php
+            $rutaFoto = "index.php";
+            $ruta = "CarpetaRopa/ColeccionMujer/mujer.php";
+            $ruta1 = "CarpetaRopa/ColeccionHombre/hombre.php";
+            $ruta2 = "CarpetaRopa/ColecciónNiño/niño.php";
+            $ruta3 = "Informacion001/comollegar.php";
             include("phpinicio/menu.php");
         ?>
     </header>
