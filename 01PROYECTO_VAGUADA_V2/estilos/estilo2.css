@@ -12,7 +12,7 @@ body {
 
 @font-face {
     font-family: 'Anton';
-    src: url('./') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real a tu fuente */
+    src: url('../ARCHIVOS/Anton/Anton.ttf') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real a tu fuente */
     font-weight: normal;
     font-style: normal;
 }
@@ -21,6 +21,8 @@ body {
 /*INICIO BOXES PROMOCIONALES*/
 #upp{
     text-transform: uppercase;
+    font-family: 'Anton';
+    color: black;
 }
 
 .tituloinsta{
@@ -69,6 +71,9 @@ img{
 }
 h3{
     text-transform: uppercase;
+}
+.fourbox img{
+    margin-top: 850%;
 }
 
 /*FINAL BOXES PROMOCIONALES*/

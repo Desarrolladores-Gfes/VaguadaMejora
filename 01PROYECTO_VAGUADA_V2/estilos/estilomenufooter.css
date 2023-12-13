@@ -5,7 +5,7 @@
 /*INICIO MENÚ INICIO*/
 .menuIndex{
     position: fixed;
-    background-color: white;
+    background-color: #E7C5B1;
     width: 100%;
     display: flex;
 }
@@ -18,27 +18,36 @@
     display: flex;
 }
 .menuHorizontal li {      
-    margin: 0 10px;  /* Espaciado entre elementos de la lista */
+    margin: 0 15px;  /* Espaciado entre elementos de la lista */
 }
 
 .divmenuinicio {
     width: 100%;
     display: flex;
-
-
     text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 40%;
 }
 .divmenuinicio a{
-    margin: 0 10px 0 10px;
+    margin: 25px 10px 0 10px;
+    font-size: 20px;
 }
+
 .letramenu a{
-    margin-top: 30px;
-    font-style: none;
+    text-decoration: none;
 }
+.iniciocontenedor{
+    padding-right: 300px; /*Margen entre las opciones y el inicio de sesión*/
+    margin-top: 25px;
+}
+.iniciocontenedor a {
+    font-size: 20px;
+}
+
 
 
 .videoinicio{
-    margin-top: 80px;
+    margin-top: 78px;
     width: 100%;
 }
 
@@ -69,14 +78,13 @@
 .listadofooter2 a{
     text-decoration: none;
     color: rgb(255, 229, 189);
-    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
 }
 .listadofooter2 a:hover{
     color: rgb(0, 0, 0);
 }
-.titulillo{
-    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
-}
+/*.titulillo{
+    METER LETRA PARA TÍTULOS
+}*/
 .imagendelfooter{
     filter: invert(100%);
 }

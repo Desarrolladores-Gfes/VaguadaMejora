@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../estilos/estilomenufooter.css">
+    <link rel="stylesheet" type="text/css" href="../../estilos/estilo2.css">
     <title>Colección Mujer</title>
 </head>
 
@@ -81,7 +82,7 @@
                 }
 
                 echo '<div class="product-box">';
-                echo '<a class="product-link" href="otra_pagina.php?producto_id=' . $row['id'] . '">';
+                echo '<a id="upp" class="product-link" href="../producto.php?producto_id=' . $row['id'] . '">';
                 
                 // Mostrar imagen almacenada como blob
                 echo '<img class="product-image" src="data:image/jpg;base64,' . base64_encode($row['imagen_1']) . '" alt="Imagen 1">';

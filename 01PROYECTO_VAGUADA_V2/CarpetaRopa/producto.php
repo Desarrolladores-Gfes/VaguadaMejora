@@ -1,98 +1,103 @@
-<?php
-// producto.php
-
-// Configuración de conexión a la base de datos (reemplaza con tus propios datos)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bdvaguada";
-
-// Conexión a la base de datos
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar la conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
-
-// Manejar la solicitud de búsqueda si se proporciona el parámetro 'action=buscar' y 'id'
-if (isset($_GET['action']) && $_GET['action'] == 'buscar' && isset($_GET['id'])) {
-    // Obtén el ID de la solicitud AJAX
-    $id = $_GET['id'];
-
-    // Consulta SQL para obtener la fila con el ID proporcionado
-    $sql = "SELECT * FROM productos WHERE id = $id";
-    $result = $conn->query($sql);
-
-    // Verificar si se encontró la fila
-    if ($result->num_rows > 0) {
-        // Convertir el resultado a un array asociativo y enviarlo como JSON
-        $row = $result->fetch_assoc();
-        echo json_encode($row);
-    } else {
-        // Enviar una respuesta si no se encuentra la fila
-        echo "No se encontró ninguna fila con el ID proporcionado";
-    }
-
-    // Terminar el script de PHP después de manejar la solicitud AJAX
-    exit();
-}
-
-// Agrega el siguiente código para manejar la solicitud de búsqueda de fotos
-if (isset($_GET['action']) && $_GET['action'] == 'mostrar_fotos') {
-    // Consulta SQL para obtener todas las fotos
-    $sql = "SELECT * FROM fotos";
-    $result = $conn->query($sql);
-
-    // Verificar si se encontraron fotos
-    if ($result->num_rows > 0) {
-        // Obtener todas las filas como un array asociativo
-        $fotos = $result->fetch_all(MYSQLI_ASSOC);
-        
-        // Enviar las fotos como JSON
-        echo json_encode($fotos);
-    } else {
-        // Enviar una respuesta si no se encuentran fotos
-        echo "No se encontraron fotos en la base de datos";
-    }
-
-    // Terminar el script de PHP después de manejar la solicitud AJAX
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Página de Productos</title>
+    <title>COMPLETAR LLAMADA BD</title>
+    <link rel="stylesheet" type="text/css" href="../estilos/estilomenufooter.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/estilo2.css">
 </head>
 <body>
-    <!-- Agrega este bloque de código donde desees mostrar las fotos -->
-    <div id="grid-container"></div>
+    <header>
+        <?php
+            $rutaFoto = "../index.php";
+            $ruta = "../CarpetaRopa/ColeccionMujer/mujer.php";
+            $ruta1 = "../CarpetaRopa/ColeccionHombre/hombre.php";
+            $ruta2 = "../CarpetaRopa/ColecciónNiño/niño.php";
+            $ruta3 = "../Informacion001/comollegar.php";
+            include("../phpinicio/menu.php");
+        ?>
+    </header>
+    <main>
+        <div>
+            <img src="<?= $imagen_1 ?>" alt="">
+        </div>
+        
+        <?php
+            // Conectar a la base de datos
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "bdvaguada";
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Realiza la solicitud AJAX para obtener las fotos
-            $.ajax({
-                url: 'producto.php?action=mostrar_fotos',
-                type: 'GET',
-                dataType: 'json',
-                success: function(data) {
-                    // Construir el grid doble con un ancho del 45%
-                    var gridContainer = $('#grid-container');
-                    data.forEach(function(foto) {
-                        var imageElement = $('<img>').attr('src', foto.url).css('width', '45%');
-                        gridContainer.append(imageElement);
-                    });
-                },
-                error: function() {
-                    console.log('Error al obtener las fotos');
-                }
-            });
-        });
-    </script>
+            $conexion = new mysqli($servername, $username, $password, $dbname);
+
+            // Verificar la conexión
+            if ($conexion->connect_error) {
+                die("Conexión fallida: " . $conexion->connect_error);
+            }
+
+            // Obtener el valor del parámetro producto_id
+            $producto_id = $_GET['producto_id'];
+
+            // Consultar la base de datos para obtener los detalles del producto
+            $sql = "SELECT nombre_producto, descripcion_producto, precio_producto, mujer, hombre, infantil, imagen_1, imagen_2, imagen_3, imagen_4, imagen_5, imagen_6, imagen_7, imagen_8, imagen_9 FROM productos WHERE id = ?";
+
+            // Preparar la consulta
+            $stmt = $conexion->prepare($sql);
+
+            // Vincular el parámetro
+            $stmt->bind_param("i", $producto_id);
+
+            // Ejecutar la consulta
+            $stmt->execute();
+
+            // Vincular las columnas de resultado a variables
+            $stmt->bind_result(
+                $nombre_producto, 
+                $descripcion_producto, 
+                $precio_producto, 
+                $mujer, 
+                $hombre, 
+                $infantil, 
+                $imagen_1_blob, 
+                $imagen_2_blob, 
+                $imagen_3_blob, 
+                $imagen_4_blob, 
+                $imagen_5_blob, 
+                $imagen_6_blob, 
+                $imagen_7_blob, 
+                $imagen_8_blob, 
+                $imagen_9_blob
+            );
+
+            // Obtener los resultados
+            $stmt->fetch();
+
+            // Agrega esta línea para imprimir los datos del blob
+            var_dump($imagen_1_blob);
+
+            // Intenta convertir directamente el blob a base64 sin agregar "data:image/jpeg;base64,"
+            $imagen_1 = base64_encode($imagen_1_blob);
+
+            // Convertir los blobs a imágenes JPEG
+            $imagen_1 = 'data:image/jpg;base64,' . base64_encode($imagen_1_blob);
+            $imagen_2 = 'data:image/jpg;base64,' . base64_encode($imagen_2_blob);
+            $imagen_3 = 'data:image/jpg;base64,' . base64_encode($imagen_3_blob);
+            $imagen_4 = 'data:image/jpg;base64,' . base64_encode($imagen_4_blob);
+            $imagen_5 = 'data:image/jpg;base64,' . base64_encode($imagen_5_blob);
+            $imagen_6 = 'data:image/jpg;base64,' . base64_encode($imagen_6_blob);
+            $imagen_7 = 'data:image/jpg;base64,' . base64_encode($imagen_7_blob);
+            $imagen_8 = 'data:image/jpg;base64,' . base64_encode($imagen_8_blob);
+            $imagen_9 = 'data:image/jpg;base64,' . base64_encode($imagen_9_blob);
+
+            // Cerrar la conexión y liberar recursos
+            $stmt->close();
+            $conexion->close();
+        ?>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
