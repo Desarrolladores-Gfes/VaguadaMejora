@@ -9,17 +9,17 @@
                 <li><div class="listadofooter2">
                     <ul>
                         <li class="titulillo"><strong>Secciones</strong></li>
-                        <li><a href="/CarpetaRopa/ColeccionMujer/mujer.html">Mujer</a></li>
-                        <li><a href="/CarpetaRopa/ColeccionHombre/hombre.html">Hombre</a></li>
-                        <li><a href="/CarpetaRopa/ColecciónNiño/niño.html">Infantil</a></li>
+                        <li><a href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/CarpetaRopa/ColeccionMujer/mujer.php">Mujer</a></li>
+                        <li><a href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/CarpetaRopa/ColeccionHombre/hombre.php">Hombre</a></li>
+                        <li><a href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/CarpetaRopa/ColecciónNiño/niño.php">Infantil</a></li>
                     </ul>
                 </div></li>
                 <li><div class="listadofooter2">
                     <ul>
                         <li class="titulillo"><strong>Información</strong></li>
-                        <li><a href="/Informacion001/comollegar.html">Cómo Llegar</a></li>
-                        <li><a href="/Informacion001/sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li><a target="_blank" href="/Informacion001/tallas.html">Guía de tallas</a></li>
+                        <li><a href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/Informacion001/comollegar.php">Cómo Llegar</a></li>
+                        <li><a href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/Informacion001/sobrenosotros.php">Sobre Nosotros</a></li>
+                        <li><a target="_blank" href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/Informacion001/tallas.html">Guía de tallas</a></li>
                     </ul>
                 </div></li>
                 <li><div class="listadofooter2">
