@@ -9,6 +9,57 @@
     <link rel="stylesheet" type="text/css" href="estilos/estilo2.css">
     <link rel="stylesheet" type="text/css" href="estilos/estilomenufooter.css">
 </head>
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'MLyf2kQ6Y7NWXixEQ';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<script>
+    window.interdeal = {
+        "sitekey": "ec0d211b0bd160a185113706f5e13240",
+        "Position": "Right",
+        "Menulang": "ES",
+        "domains": {
+            "js": "https://cdn.equalweb.com/",
+            "acc": "https://access.equalweb.com/"
+        },
+        "btnStyle": {
+            "vPosition": [
+                "50%",
+                null
+            ],
+            "scale": [
+                "0.4",
+                "0.4"
+            ],
+            "color": {
+                "main": "#6c6e75"
+            },
+            "icon": {
+                "type": 11,
+                "shape": "circle",
+                "outline": false
+            }
+        }
+    };
+    (function(doc, head, body){
+        var coreCall             = doc.createElement('script');
+        coreCall.src             = 'https://cdn.equalweb.com/core/4.4.1/accessibility.js';
+        coreCall.defer           = true;
+        coreCall.integrity       = 'sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==';
+        coreCall.crossOrigin     = 'anonymous';
+        coreCall.setAttribute('data-cfasync', true );
+        body? body.appendChild(coreCall) : head.appendChild(coreCall);
+    })(document, document.head, document.body);
+</script>
+
 <body>
     <header>
         <?php
