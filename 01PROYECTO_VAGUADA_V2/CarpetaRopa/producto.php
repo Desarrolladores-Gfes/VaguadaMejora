@@ -6,6 +6,7 @@
     <title>COMPLETAR LLAMADA BD</title>
     <link rel="stylesheet" type="text/css" href="../estilos/estilomenufooter.css">
     <link rel="stylesheet" type="text/css" href="../estilos/estilo2.css">
+    <link rel="stylesheet" type="text/css" href="./estiloderopa.css">
 </head>
 <body>
     <header>
@@ -15,89 +16,102 @@
             $ruta1 = "../CarpetaRopa/ColeccionHombre/hombre.php";
             $ruta2 = "../CarpetaRopa/ColecciónNiño/niño.php";
             $ruta3 = "../Informacion001/comollegar.php";
+            $ruta4 = "../paginasprincipales/configuser.php";
+            $ruta5 = "../phplogin/login.php";
+            $ruta6 = "../phplogin/registro.php";
             include("../phpinicio/menu.php");
         ?>
     </header>
     <main>
-        <div>
-            <img src="<?= $imagen_1 ?>" alt="">
-        </div>
+    <?php
+
+function obtenerProductoPorId($id) {
+    $conexion = new mysqli('localhost', 'root', '', 'bdvaguada');
+
+    // Verificar la conexión
+    if ($conexion->connect_error) {
+        die("Error de conexión a la base de datos: " . $conexion->connect_error);
+    }
+
+    // Consulta SQL para obtener la fila del producto por su ID
+    $consulta = "SELECT * FROM productos WHERE id = $id";
+    $resultado = $conexion->query($consulta);
+
+    // Verificar si se obtuvo un resultado
+    if ($resultado->num_rows > 0) {
+        $fila = $resultado->fetch_assoc();
+
+        // Iniciar el contenedor principal
+        echo "<div class='producto'>";
         
-        <?php
-            // Conectar a la base de datos
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "bdvaguada";
+        // Mostrar la primera imagen junto con la información del producto
+        $imagenBase64 = base64_encode($fila['imagen_1']);
+        echo "<img src='data:image/jpg;base64,{$imagenBase64}' alt='Imagen 1'>";
 
-            $conexion = new mysqli($servername, $username, $password, $dbname);
+        // Contenedor para la descripción a la derecha
+        echo "<div class='descripcion'>";
+        
+        // Mostrar la estructura del producto
+        echo "<h1>{$fila['nombre_producto']}</h1>";
+        echo "<p>{$fila['descripcion_producto']}</p>";
+        echo "<span>Precio: {$fila['precio_producto']}</span>";
+        
+        // Mostrar las categorías (niño, mujer, hombre)
+        $categorias = [];
+        if ($fila['infantil']) $categorias[] = 'Niño';
+        if ($fila['mujer']) $categorias[] = 'Mujer';
+        if ($fila['hombre']) $categorias[] = 'Hombre';
 
-            // Verificar la conexión
-            if ($conexion->connect_error) {
-                die("Conexión fallida: " . $conexion->connect_error);
+        if (!empty($categorias)) {
+            echo "<p>Categorías: " . implode(', ', $categorias) . "</p>";
+        }
+
+        // Cerrar el contenedor de descripción
+        echo "</div>";
+
+        // Cerrar el contenedor principal
+        echo "</div>";
+
+        // Mostrar las imágenes restantes debajo, de dos en dos
+        for ($i = 2; $i <= 9; $i += 2) {
+            $campoImagen1 = "imagen_$i";
+            $campoImagen2 = "imagen_" . ($i + 1);
+            
+            // Verificar si las imágenes existen
+            if (!empty($fila[$campoImagen1]) || !empty($fila[$campoImagen2])) {
+                echo "<div class='producto'>";
+                
+                // Mostrar la imagen 1
+                if (!empty($fila[$campoImagen1])) {
+                    $imagenBase64_1 = base64_encode($fila[$campoImagen1]);
+                    echo "<img src='data:image/jpg;base64,{$imagenBase64_1}' alt='Imagen $i'>";
+                }
+                
+                // Mostrar la imagen 2
+                if (!empty($fila[$campoImagen2])) {
+                    $imagenBase64_2 = base64_encode($fila[$campoImagen2]);
+                    echo "<img src='data:image/jpg;base64,{$imagenBase64_2}' alt='Imagen " . ($i + 1) . "'>";
+                }
+
+                // Cerrar el contenedor de las imágenes restantes
+                echo "</div>";
             }
+        }
+    } else {
+        echo "No se encontró ningún producto con el ID $id";
+    }
 
-            // Obtener el valor del parámetro producto_id
-            $producto_id = $_GET['producto_id'];
+    // Cerrar la conexión
+    $conexion->close();
+}
 
-            // Consultar la base de datos para obtener los detalles del producto
-            $sql = "SELECT nombre_producto, descripcion_producto, precio_producto, mujer, hombre, infantil, imagen_1, imagen_2, imagen_3, imagen_4, imagen_5, imagen_6, imagen_7, imagen_8, imagen_9 FROM productos WHERE id = ?";
+// Usar la función con un ID específico (reemplaza '1' con el ID que necesites)
+obtenerProductoPorId(1);
 
-            // Preparar la consulta
-            $stmt = $conexion->prepare($sql);
-
-            // Vincular el parámetro
-            $stmt->bind_param("i", $producto_id);
-
-            // Ejecutar la consulta
-            $stmt->execute();
-
-            // Vincular las columnas de resultado a variables
-            $stmt->bind_result(
-                $nombre_producto, 
-                $descripcion_producto, 
-                $precio_producto, 
-                $mujer, 
-                $hombre, 
-                $infantil, 
-                $imagen_1_blob, 
-                $imagen_2_blob, 
-                $imagen_3_blob, 
-                $imagen_4_blob, 
-                $imagen_5_blob, 
-                $imagen_6_blob, 
-                $imagen_7_blob, 
-                $imagen_8_blob, 
-                $imagen_9_blob
-            );
-
-            // Obtener los resultados
-            $stmt->fetch();
-
-            // Agrega esta línea para imprimir los datos del blob
-            var_dump($imagen_1_blob);
-
-            // Intenta convertir directamente el blob a base64 sin agregar "data:image/jpeg;base64,"
-            $imagen_1 = base64_encode($imagen_1_blob);
-
-            // Convertir los blobs a imágenes JPEG
-            $imagen_1 = 'data:image/jpg;base64,' . base64_encode($imagen_1_blob);
-            $imagen_2 = 'data:image/jpg;base64,' . base64_encode($imagen_2_blob);
-            $imagen_3 = 'data:image/jpg;base64,' . base64_encode($imagen_3_blob);
-            $imagen_4 = 'data:image/jpg;base64,' . base64_encode($imagen_4_blob);
-            $imagen_5 = 'data:image/jpg;base64,' . base64_encode($imagen_5_blob);
-            $imagen_6 = 'data:image/jpg;base64,' . base64_encode($imagen_6_blob);
-            $imagen_7 = 'data:image/jpg;base64,' . base64_encode($imagen_7_blob);
-            $imagen_8 = 'data:image/jpg;base64,' . base64_encode($imagen_8_blob);
-            $imagen_9 = 'data:image/jpg;base64,' . base64_encode($imagen_9_blob);
-
-            // Cerrar la conexión y liberar recursos
-            $stmt->close();
-            $conexion->close();
-        ?>
+?>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
