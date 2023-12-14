@@ -26,11 +26,11 @@
         <div class="general-ajustes">
             <div class="divajustes1" >
                 <ul>
-                    <li><a id="upp2" href="">MODIFICAR DATOS</a></li>
-                    <li><a id="upp2" href="">BOTÓN1</a></li>
-                    <li><a id="upp2" href="">BOTÓN1</a></li>
-                    <li><a id="upp2" href="">BOTÓN1</a></li>
-                    <li><a id="upp2" href="?cerrar_sesion=1">Cerrar sesión</a></li>
+                    <li><a id="upp2" class="hoverconfig" href="">MODIFICAR DATOS</a></li>
+                    <li><a id="upp2" class="hoverconfig" href="">BOTÓN1</a></li>
+                    <li><a id="upp2" class="hoverconfig" href="">BOTÓN1</a></li>
+                    <li><a id="upp2" class="hoverconfig" href="">BOTÓN1</a></li>
+                    <li><a id="upp2" class="hoverconfig" href="?cerrar_sesion=1">Cerrar sesión</a></li>
                 </ul>
             </div>
             <div class="divajustes2">
@@ -62,7 +62,6 @@
 
                     // Si se envió el formulario, actualizar la base de datos
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        // Recoger los datos del formulario
                         $name = $_POST['name'];
                         $username = $_POST['username'];
                         $email = $_POST['email'];
@@ -92,6 +91,8 @@
                         $tlfnumber = $row['tlfnumber'];
                     }
                 ?>
+                <br>
+                <h3 id="upp" class="titleconfig">Actualizar datos de usuario</h3><br><br>
                 <form method="post">
                     <label id="upp2" for="name">Nombre:</label>
                     <input type="text" name="name" value="<?php echo $name; ?>"><br>

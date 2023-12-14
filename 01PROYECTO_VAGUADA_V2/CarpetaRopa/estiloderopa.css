@@ -14,6 +14,7 @@
   }
 
   .descripcion {
+    margin: 100px 150px;
     justify-content: center;
     flex: 1;
     padding: 10px;

@@ -44,7 +44,9 @@
 .iniciocontenedor a {
     font-size: 20px;
 }
-
+.iniciocontenedor a:hover{
+    opacity: 50%;
+}
 
 
 .videoinicio{
