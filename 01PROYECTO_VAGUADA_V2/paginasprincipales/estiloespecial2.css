@@ -1,0 +1,26 @@
+.maininsertar{
+    padding-top: 120px;
+    padding-bottom: 500px;
+}
+.divinsertar{
+    margin-left: 38%;
+}
+
+.textfieldsiete input{
+    max-width: 600px;
+}
+.textfieldsiete {
+    padding-left: 170px;
+}
+
+.btn-primary {
+    background-color: rgb(144, 77, 1);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #9d6e4e;
+}
