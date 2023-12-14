@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./estiloespeciales.css">
+    <link rel="stylesheet" type="text/css" href="./estiloespecial2.css">
     <link rel="stylesheet" type="text/css" href="../estilos/estilomenufooter.css">
     <link rel="stylesheet" type="text/css" href="../estilos/estilo2.css">
 </head>
@@ -14,8 +14,8 @@
             $rutaFoto = "../index.php";
             $ruta = "#";
             $ruta1 = "./error404.php";
-            $ruta2 = "../CarpetaRopa/ColecciónNiño/niño.php";
-            $ruta3 = "../Informacion001/comollegar.php";
+            $ruta2 = "./error404.php";
+            $ruta3 = "./error404.php";
             include("../paginasprincipales/menuadmin.php");
         ?>
     </header>
@@ -23,32 +23,32 @@
         <div class="divinsertar" >
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" enctype="multipart/form-data">
                 <div>
-                    <h3>Requisitos obligatorios <span style="color: red;">*</span></h3>
+                    <h3 id="upp">Requisitos obligatorios <span style="color: red;">*</span></h3>
                 </div>
 
                 <div class="textfielduno">
-                    <label for="nombre_producto">Nombre del producto:</label>
+                    <label id="upp2" for="nombre_producto"><span style="color: red;">*</span>Nombre del producto:</label>
                     <input type="text" name="nombre_producto" class="form-control" required>
                 </div>
 
                 <div class="textfielddos">
-                    <label for="descripcion_producto">Descripción del producto:</label>
+                    <label id="upp2" for="descripcion_producto"><span style="color: red;">*</span>Descripción del producto:</label>
                     <textarea name="descripcion_producto" class="form-control" rows="4" required></textarea>
                 </div>
 
                 <div class="textfieldtres">
-                    <label for="precio_producto">Precio del producto:</label>
+                    <label id="upp2" for="precio_producto"><span style="color: red;">*</span>Precio del producto:</label>
                     <input type="number" name="precio_producto" class="form-control" step="0.01" required>
                 </div>
 
                 <div class="checkbox-container">
-                    <label for="mujerCheckbox">Mujer</label>
+                    <label id="upp2" for="mujerCheckbox"><span style="color: red;">*</span>Mujer</label>
                     <input type="checkbox" id="mujerCheckbox" name="mujer" value="1" onchange="updateSelection('mujerCheckbox')">
                     
-                    <label for="hombreCheckbox">Hombre</label>
+                    <label id="upp2" for="hombreCheckbox">Hombre</label>
                     <input type="checkbox" id="hombreCheckbox" name="hombre" value="1" onchange="updateSelection('hombreCheckbox')">
                     
-                    <label for="infantilCheckbox">Infantil</label>
+                    <label id="upp2" for="infantilCheckbox">Infantil</label>
                     <input type="checkbox" id="infantilCheckbox" name="infantil" value="1" onchange="updateSelection('infantilCheckbox')">
                 </div>
 
@@ -74,45 +74,45 @@
                 </script>
 
                 <div class="textfieldcuatro">
-                    <label for="imagen_1">Imagen 1:</label>
+                    <label id="upp2" for="imagen_1"><span style="color: red;">*</span>Imagen 1:</label>
                     <input type="file" name="imagen_1" class="form-control-file" accept="image/*" required>
                 </div>
 
                 <div class="textfieldcinco">
-                    <label for="imagen_2">Imagen 2:</label>
+                    <label id="upp2" for="imagen_2"><span style="color: red;">*</span>Imagen 2:</label>
                     <input type="file" name="imagen_2" class="form-control-file" accept="image/*" required>
                 </div>
 
                 <div class="textfieldseis">
-                    <label for="imagen_3">Imagen 3:</label>
+                    <label id="upp2" for="imagen_3">Imagen 3:</label>
                     <input type="file" name="imagen_3" class="form-control-file" accept="image/*">
                 </div>
 
                 <div class="textfieldseis">
-                    <label for="imagen_4">Imagen 4:</label>
+                    <label id="upp2" for="imagen_4">Imagen 4:</label>
                     <input type="file" name="imagen_4" class="form-control-file" accept="image/*">
                 </div>
 
                 <div class="textfieldseis">
-                    <label for="imagen_5">Imagen 5:</label>
+                    <label id="upp2" for="imagen_5">Imagen 5:</label>
                     <input type="file" name="imagen_5" class="form-control-file" accept="image/*">
                 </div>
 
                 <div class="textfieldseis">
-                    <label for="imagen_6">Imagen 6:</label>
+                    <label id="upp2" for="imagen_6">Imagen 6:</label>
                     <input type="file" name="imagen_6" class="form-control-file" accept="image/*">
                 </div>
 
                 <div class="textfieldseis">
-                    <label for="imagen_7">Imagen 7:</label>
+                    <label id="upp2" for="imagen_7">Imagen 7:</label>
                     <input type="file" name="imagen_7" class="form-control-file" accept="image/*">
                 </div>
 
                 <div class="textfieldseis">
-                    <label for="imagen_8">Imagen 8:</label>
+                    <label id="upp2" for="imagen_8">Imagen 8:</label>
                     <input type="file" name="imagen_8" class="form-control-file" accept="image/*">
                 </div>
-
+                <br>
                 <div class="textfieldsiete">
                     <input type="submit" value="Enviar" class="btn btn-primary">
                 </div>
