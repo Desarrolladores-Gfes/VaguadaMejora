@@ -30,19 +30,15 @@ function obtenerProductoPorId() {
         
         $id = $_GET['id'];
 
-        
         $conexion = new mysqli('localhost', 'root', '', 'bdvaguada');
 
-        
         if ($conexion->connect_error) {
             die("Error de conexión a la base de datos: " . $conexion->connect_error);
         }
 
-        
         $consulta = "SELECT * FROM productos WHERE id = $id";
         $resultado = $conexion->query($consulta);
 
-        
         if ($resultado->num_rows > 0) {
             $fila = $resultado->fetch_assoc();
 
@@ -53,7 +49,7 @@ function obtenerProductoPorId() {
             echo "<div class='descripcion'>";
             echo "<h1>{$fila['nombre_producto']}</h1>";
             echo "<p>{$fila['descripcion_producto']}</p>";
-            echo "<span class='precio'>Precio: {$fila['precio_producto']}</span>";
+            echo "<br><br><br><span class='precio'>Precio: {$fila['precio_producto']} €</span>";
             $categorias = [];
             if ($fila['infantil']) $categorias[] = 'Niño';
             if ($fila['mujer']) $categorias[] = 'Mujer';

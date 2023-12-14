@@ -57,15 +57,20 @@ main {
 
 .divajustes1 {
     padding: 30px;
-    background-color: #9d6e4e;
+    background-color: #E7C5B1;
     color: #fff;
     min-width: 150px;
 }
 
 .divajustes1 ul {
     list-style-type: none;
+    
 }
-
+.divajustes1 li{
+    background-color: #bc9e8c;
+    padding: 10px;
+    border-radius: 10px;
+}
 .divajustes1 a {
     text-decoration: none;
     color: #fff;
@@ -108,4 +113,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: rgb(81, 43, 0);
 }
+
+
+.titleconfig{
+    text-align: center;
+    font-size: 25px;
+}
+.divajustes1 li:hover{
+    opacity: 50%;
+}
+
 /*FIN CONFIGUSER MENU*/

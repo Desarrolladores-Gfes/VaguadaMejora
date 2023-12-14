@@ -26,6 +26,9 @@
     </header>
     <main>
         <style>
+            .product-box:hover{
+                opacity: 50%;
+            }
             .product-row {
                 padding-top: 100px;
                 display: flex;

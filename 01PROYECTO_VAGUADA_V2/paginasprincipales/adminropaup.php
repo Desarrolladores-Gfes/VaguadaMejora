@@ -23,6 +23,7 @@
         <div class="divinsertar" >
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" enctype="multipart/form-data">
                 <div>
+                    <h1 id="upp">Introducción de prendas</h1><br>
                     <h3 id="upp">Requisitos obligatorios <span style="color: red;">*</span></h3>
                 </div>
 
