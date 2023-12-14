@@ -19,10 +19,29 @@
     padding: 10px;
     text-align: left;
   }
-
+  .descripcion h1{
+    font-family: Paytone;
+  }
+  .descripcion p{
+    font-family: Paytone;
+  }
+  .precio{
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: Anton;
+  }
   .descripcion h1, .descripcion p, .descripcion span {
     margin-bottom: 10px;
   }
+  
 
-  .
+  .producto2{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .producto2 img{
+    max-width: 50%;
+  }
+
 /*FIN PRODUCTO.PHP*/
