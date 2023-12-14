@@ -8,6 +8,7 @@
     background-color: #E7C5B1;
     width: 100%;
     display: flex;
+    z-index: 2;
 }
 .menuAimg img{
     width: 180px;

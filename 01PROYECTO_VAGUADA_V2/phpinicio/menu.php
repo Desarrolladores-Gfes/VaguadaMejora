@@ -21,10 +21,10 @@
                             // Inicia la sesión
                             session_start();
                             if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
-                                echo '<a class="menuHorizontal001" href= "./paginasprincipales/configuser.php">Bienvenido: ' . $_SESSION['user_name'] . '</a>';
+                                echo '<a class="menuHorizontal001" id="upp" href="' . $ruta4 . '">Bienvenido: ' . $_SESSION['user_name'] . '</a>';
                             } else {
-                                echo '<a class="menuHorizontal001" id="upp" href= "phplogin/login.php">inicio de sesión</a>';
-                                echo '<a class="menuHorizontal001" id="upp" href= "phplogin/registro.php">registro</a>';
+                                echo '<a class="menuHorizontal001" id="upp" href="' . $ruta5 . '">Inicio de sesión</a>';
+                                echo '<a class="menuHorizontal001" id="upp" href="' . $ruta6 . '">Registro</a>';
                             }
                         ?>
                     </div>

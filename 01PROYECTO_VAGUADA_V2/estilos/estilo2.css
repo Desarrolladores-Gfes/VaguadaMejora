@@ -16,12 +16,34 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Hind';
+    src: url('../ARCHIVOS/Anton/Hind.ttf') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real a tu fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paytone';
+    src: url('../ARCHIVOS/Anton/Paytone.ttf') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real a tu fuente */
+    font-weight: normal;
+    font-style: normal;
+}
 /*FINAL estilo.css*/
 
 /*INICIO BOXES PROMOCIONALES*/
 #upp{
     text-transform: uppercase;
     font-family: 'Anton';
+    color: black;
+}
+#upp2{
+    text-transform: uppercase;
+    font-family: 'Paytone';
+    color: black;
+}
+#upp3{
+    text-transform: uppercase;
+    font-family: 'Hind';
     color: black;
 }
 
@@ -45,7 +67,7 @@ body {
 
 .divboxinicio{
     display: flex;
-    margin-bottom: 150px;
+    margin: 0 50px 150px 50px;
 }
 
 img{
@@ -53,12 +75,30 @@ img{
 }
 .onebox{
     text-align: center;
+    margin-right: 20px;
+}
+.onebox img{
+    border-radius: 80px 0 0 0;
+}
+.onebox img:hover{
+    opacity: 50%;
 }
 .twobox{
     text-align: center;
+    margin: 0 20px;
+}
+.twobox img:hover{
+    opacity: 50%;
 }
 .threebox{
     text-align: center;
+    margin: 0 20px;
+}
+.threebox img{
+    border-radius: 0 0 80px 0;
+}
+.threebox img:hover{
+    opacity: 50%;
 }
 .onebox a{
     text-decoration: none;
@@ -69,11 +109,12 @@ img{
 .threebox a{
     text-decoration: none;
 }
-h3{
-    text-transform: uppercase;
-}
+
 .fourbox img{
     margin-top: 850%;
+}
+.fourbox img:hover{
+    opacity: 50%;
 }
 
 /*FINAL BOXES PROMOCIONALES*/

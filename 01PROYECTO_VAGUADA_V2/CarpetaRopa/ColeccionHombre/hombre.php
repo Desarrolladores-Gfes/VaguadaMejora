@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://drive.google.com/uc?export=view&id=1rOy5lWGsWbryxJL5eWdvYbyMtVnU1Yd0">
     <link rel="stylesheet" type="text/css" href="../../estilos/estilomenufooter.css">
     <link rel="stylesheet" type="text/css" href="../../estilos/estilo2.css">
-    <title>Colección Hombre</title>
+    <title>Colección Mujer</title>
 </head>
 
 <body>
@@ -17,6 +18,9 @@
             $ruta1 = "../../CarpetaRopa/ColeccionHombre/hombre.php";
             $ruta2 = "../../CarpetaRopa/ColecciónNiño/niño.php";
             $ruta3 = "../../Informacion001/comollegar.php";
+            $ruta4 = "../../paginasprincipales/configuser.php";
+            $ruta5 = "../../phplogin/login.php";
+            $ruta6 = "../../phplogin/registro.php";
             include("../../phpinicio/menu.php");
         ?>
     </header>
@@ -82,7 +86,7 @@
                 }
 
                 echo '<div class="product-box">';
-                echo '<a class="product-link" href="otra_pagina.php?producto_id=' . $row['id'] . '">';
+                echo '<a id="upp" class="product-link" href="../producto.php?producto_id=' . $row['id'] . '">';
                 
                 // Mostrar imagen almacenada como blob
                 echo '<img class="product-image" src="data:image/jpg;base64,' . base64_encode($row['imagen_1']) . '" alt="Imagen 1">';
@@ -102,8 +106,6 @@
             }
 
             echo '</div>';
-
-            // Cerrar la conexión a la base de datos
             $conn->close();
         ?>
 

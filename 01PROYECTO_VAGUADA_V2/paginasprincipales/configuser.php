@@ -5,74 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajustes</title>
     <link rel="stylesheet" type="text/css" href="../estilos/estilomenufooter.css">
-    <style>
-        
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .general-ajustes {
-            margin-top: 8%;
-            display: flex;
-            width: 90%;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            height: 80vh;
-        }
-
-        .divajustes1 {
-            padding: 30px;
-            background-color: #9d6e4e;
-            color: #fff;
-            min-width: 150px;
-        }
-
-        .divajustes1 ul {
-            list-style-type: none;
-        }
-
-        .divajustes1 a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .divajustes2 {
-            padding: 20px;
-            flex-grow: 1;
-        }
-
-        form {
-            max-width: 400px;
-            margin: auto;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: rgb(144, 77, 1);
-            color: #fff;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: rgb(81, 43, 0);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../estilos/estilo2.css">
+    <link rel="stylesheet" type="text/css" href="./estiloespeciales.css">
 </head>
 <body>
     <header>
@@ -82,6 +16,9 @@
             $ruta1 = "../CarpetaRopa/ColeccionHombre/hombre.php";
             $ruta2 = "../CarpetaRopa/ColecciónNiño/niño.php";
             $ruta3 = "../Informacion001/comollegar.php";
+            $ruta4 = "../paginasprincipales/configuser.php";
+            $ruta5 = "../phplogin/login.php";
+            $ruta6 = "../phplogin/registro.php";
             include("../phpinicio/menu.php");
         ?>
     </header>
@@ -89,11 +26,11 @@
         <div class="general-ajustes">
             <div class="divajustes1" >
                 <ul>
-                    <li><a href="">MODIFICAR DATOS</a></li>
-                    <li><a href="">BOTÓN1</a></li>
-                    <li><a href="">BOTÓN1</a></li>
-                    <li><a href="">BOTÓN1</a></li>
-                    <li><a href="?cerrar_sesion=1">Cerrar sesión</a></li>
+                    <li><a id="upp2" href="">MODIFICAR DATOS</a></li>
+                    <li><a id="upp2" href="">BOTÓN1</a></li>
+                    <li><a id="upp2" href="">BOTÓN1</a></li>
+                    <li><a id="upp2" href="">BOTÓN1</a></li>
+                    <li><a id="upp2" href="?cerrar_sesion=1">Cerrar sesión</a></li>
                 </ul>
             </div>
             <div class="divajustes2">
@@ -156,16 +93,16 @@
                     }
                 ?>
                 <form method="post">
-                    <label for="name">Nombre:</label>
+                    <label id="upp2" for="name">Nombre:</label>
                     <input type="text" name="name" value="<?php echo $name; ?>"><br>
 
-                    <label for="username">Usuario:</label>
+                    <label id="upp2" for="username">Usuario:</label>
                     <input type="text" name="username" value="<?php echo $username; ?>"><br>
 
-                    <label for="email">Correo electrónico:</label>
+                    <label id="upp2" for="email">Correo electrónico:</label>
                     <input type="email" name="email" value="<?php echo $email; ?>"><br>
 
-                    <label for="tlfnumber">Número de teléfono:</label>
+                    <label id="upp2" for="tlfnumber">Número de teléfono:</label>
                     <input type="tel" name="tlfnumber" value="<?php echo $tlfnumber; ?>"><br>
 
                     <input type="submit" value="Actualizar">

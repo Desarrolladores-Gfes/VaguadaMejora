@@ -1,0 +1,98 @@
+/*INICIO CÓMO LLEGAR*/
+.MenuComoLlegar{
+    display: flex;
+    justify-content: center;
+    margin: 0 200px 0 200px;
+    padding-top: 130px;
+}
+.MenuComoLlegar div{
+    margin: 0 20px;
+}
+/*FINAL CÓMO LLEGAR*/
+
+/*INICIO SOBRE NOSOTROS*/
+.Aboutus{
+    margin: 100px 200px;
+
+
+}
+.mainsobrenosotros p{
+    justify-content: center;
+}
+.mainsobrenosotros h3{
+    text-align: center;
+    font-size: 20px;
+}
+.mainsobrenosotros h2{
+    text-align: center;
+}
+/*FINAL SOBRE NOSOTROS*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.maincontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px; 
+}
+
+.divContacto {
+    max-width: 400px;
+    width: 100%;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.letrasinenlacetitulo {
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.letrasinenlace {
+    margin-top: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#enviar {
+    background-color: #72533e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+#enviar:hover {
+    background-color: #c79472;
+}
+

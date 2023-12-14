@@ -11,10 +11,10 @@
                 <li><a class="menuAimg" href="<?php echo $rutaFoto; ?>"><img src="http://drive.google.com/uc?export=view&id=16GcTpZ6uZwp-5B5HXMWsJVPAF8TOMUA8" alt=""></a></li>
                 <li class="letramenu" >
                     <div class="divmenuinicio">
-                        <a class="menuHorizontal001" id="upp" href="<?php echo $ruta; ?>">mujer</a>
-                        <a class="menuHorizontal001" id="upp" href= "<?php echo $ruta1; ?>">hombre</a>
-                        <a class="menuHorizontal001" id="upp" href= "<?php echo $ruta2; ?>">infantil</a>
-                        <a class="menuHorizontal001" id="upp" href= "<?php echo $ruta3; ?>">información</a>
+                        <a class="menuHorizontal001" id="upp" href="<?php echo $ruta; ?>">añadir productos</a>
+                        <a class="menuHorizontal001" id="upp" href= "<?php echo $ruta1; ?>">ver productos</a>
+                        <a class="menuHorizontal001" id="upp" href= "<?php echo $ruta2; ?>">modificar productos</a>
+                        <a class="menuHorizontal001" id="upp" href= "<?php echo $ruta3; ?>">cerrar sesión</a>
                     </div>
                 </li>
             </ul>

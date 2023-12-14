@@ -1,0 +1,78 @@
+h2 {
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados */
+}
+input[type="submit"] {
+    background-color: #72533e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+}
+input[type="submit"]:hover {
+    background-color: #c79472;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../ARCHIVOS/Anton/Anton.ttf') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real a tu fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind';
+    src: url('../ARCHIVOS/Anton/Hind.ttf') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real a tu fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paytone';
+    src: url('../ARCHIVOS/Anton/Paytone.ttf') format('truetype'); /* Reemplaza 'ruta/a/tu/fuente' con la ruta real a tu fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+#upp{
+    text-transform: uppercase;
+    font-family: 'Anton';
+    color: black;
+}
+#upp2{
+    text-transform: uppercase;
+    font-family: 'Paytone';
+    color: black;
+}
+#upp3{
+    text-transform: uppercase;
+    font-family: 'Hind';
+    color: black;
+}

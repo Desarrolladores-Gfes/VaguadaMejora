@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://drive.google.com/uc?export=view&id=1rOy5lWGsWbryxJL5eWdvYbyMtVnU1Yd0">
     <link rel="stylesheet" type="text/css" href="../../estilos/estilomenufooter.css">
     <link rel="stylesheet" type="text/css" href="../../estilos/estilo2.css">
-    <title>Colección Infantil</title>
+    <title>Colección Mujer</title>
 </head>
 
 <body>
@@ -17,6 +18,9 @@
             $ruta1 = "../../CarpetaRopa/ColeccionHombre/hombre.php";
             $ruta2 = "../../CarpetaRopa/ColecciónNiño/niño.php";
             $ruta3 = "../../Informacion001/comollegar.php";
+            $ruta4 = "../../paginasprincipales/configuser.php";
+            $ruta5 = "../../phplogin/login.php";
+            $ruta6 = "../../phplogin/registro.php";
             include("../../phpinicio/menu.php");
         ?>
     </header>
@@ -82,10 +86,10 @@
                 }
 
                 echo '<div class="product-box">';
-                echo '<a class="product-link" href="../producto.php' . '">';
+                echo '<a id="upp" class="product-link" href="../producto.php?producto_id=' . $row['id'] . '">';
                 
                 // Mostrar imagen almacenada como blob
-                echo '<img class="product-image" src="data:image/jpg;base64,' . base64_encode($row['imagen_1']) . '" alt="Imagen 1" data-id="' . $row['id'] . '">';
+                echo '<img class="product-image" src="data:image/jpg;base64,' . base64_encode($row['imagen_1']) . '" alt="Imagen 1">';
                 
                 echo '<br>';
                 echo '<span class="product-name">' . $row['nombre_producto'] . '</span>';
@@ -102,41 +106,10 @@
             }
 
             echo '</div>';
-
-            // Cerrar la conexión a la base de datos
             $conn->close();
         ?>
 
     </main>
-    <script>
-        function handleClick(id) {
-            // Hacer una llamada AJAX a un script PHP en la misma página que busca la fila en la base de datos por el ID
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "producto.php", true);
-
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    // Manejar la respuesta del servidor (puede imprimir la respuesta en la consola)
-                    console.log("Respuesta del servidor:", xhr.responseText);
-                    // Puedes realizar acciones adicionales con la respuesta aquí
-                }
-            };
-
-            xhr.send();
-        }
-
-        // Obtén todas las imágenes con la clase 'product-image' y agrega un evento de clic a cada una
-        var imagenes = document.querySelectorAll('.product-image');
-        imagenes.forEach(function(imagen) {
-            imagen.addEventListener('click', function() {
-                // Obtén el ID de la imagen desde el atributo 'data-id'
-                var idFoto = this.getAttribute('data-id');
-
-                // Llama a la función para manejar el clic con el ID de la foto como argumento
-                handleClick(idFoto);
-            });
-        });
-    </script>
 </body>
 <footer class="footercontenedor">
     <?php

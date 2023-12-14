@@ -6,15 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./estiloespeciales.css">
     <link rel="stylesheet" type="text/css" href="../estilos/estilomenufooter.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/estilo2.css">
 </head>
 <body>
     <header>
         <?php
-            $rutaFoto = "./index.php";
-            $ruta = "./CarpetaRopa/ColeccionMujer/mujer.php";
-            $ruta1 = "./CarpetaRopa/ColeccionHombre/hombre.php";
-            $ruta2 = "./CarpetaRopa/ColecciónNiño/niño.php";
-            $ruta3 = "./Informacion001/comollegar.php";
+            $rutaFoto = "../index.php";
+            $ruta = "#";
+            $ruta1 = "./error404.php";
+            $ruta2 = "../CarpetaRopa/ColecciónNiño/niño.php";
+            $ruta3 = "../Informacion001/comollegar.php";
             include("../paginasprincipales/menuadmin.php");
         ?>
     </header>
