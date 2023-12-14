@@ -53,13 +53,13 @@ function obtenerProductoPorId() {
             echo "<div class='descripcion'>";
             echo "<h1>{$fila['nombre_producto']}</h1>";
             echo "<p>{$fila['descripcion_producto']}</p>";
-            echo "<span>Precio: {$fila['precio_producto']}</span>";
+            echo "<span class='precio'>Precio: {$fila['precio_producto']}</span>";
             $categorias = [];
             if ($fila['infantil']) $categorias[] = 'Niño';
             if ($fila['mujer']) $categorias[] = 'Mujer';
             if ($fila['hombre']) $categorias[] = 'Hombre';
             if (!empty($categorias)) {
-                echo "<p>Categorías: " . implode(', ', $categorias) . "</p>";
+                echo "<p>Categoría: " . implode(', ', $categorias) . "</p>";
             }
             echo "</div>";
             echo "</div>";
@@ -69,7 +69,7 @@ function obtenerProductoPorId() {
                 $campoImagen2 = "imagen_" . ($i + 1);
 
                 if (!empty($fila[$campoImagen1]) || !empty($fila[$campoImagen2])) {
-                    echo "<div class='producto'>";
+                    echo "<div class='producto2'>";
                     if (!empty($fila[$campoImagen1])) {
                         $imagenBase64_1 = base64_encode($fila[$campoImagen1]);
                         echo "<img src='data:image/jpg;base64,{$imagenBase64_1}' alt='Imagen $i'>";
