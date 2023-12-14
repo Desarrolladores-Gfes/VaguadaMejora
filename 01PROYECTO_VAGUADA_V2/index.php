@@ -21,44 +21,7 @@
         if (d.head) d.head.appendChild(s);
     })(document, window, 'Chatra');
 </script>
-<script>
-    window.interdeal = {
-        "sitekey": "ec0d211b0bd160a185113706f5e13240",
-        "Position": "Right",
-        "Menulang": "ES",
-        "domains": {
-            "js": "https://cdn.equalweb.com/",
-            "acc": "https://access.equalweb.com/"
-        },
-        "btnStyle": {
-            "vPosition": [
-                "50%",
-                null
-            ],
-            "scale": [
-                "0.4",
-                "0.4"
-            ],
-            "color": {
-                "main": "#6c6e75"
-            },
-            "icon": {
-                "type": 11,
-                "shape": "circle",
-                "outline": false
-            }
-        }
-    };
-    (function(doc, head, body){
-        var coreCall             = doc.createElement('script');
-        coreCall.src             = 'https://cdn.equalweb.com/core/4.4.1/accessibility.js';
-        coreCall.defer           = true;
-        coreCall.integrity       = 'sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==';
-        coreCall.crossOrigin     = 'anonymous';
-        coreCall.setAttribute('data-cfasync', true );
-        body? body.appendChild(coreCall) : head.appendChild(coreCall);
-    })(document, document.head, document.body);
-</script>
+<!-- Accessibility Code for "00000.com" --> <script> window.interdeal = { "sitekey": "ec0d211b0bd160a185113706f5e13240", "Position": "Right", "Menulang": "ES", "domains": { "js": "https://cdn.equalweb.com/", "acc": "https://access.equalweb.com/" }, "btnStyle": { "vPosition": [ "50%", null ], "scale": [ "0.6", "0.6" ], "color": { "main": "#6c6e75" }, "icon": { "type": 11, "shape": "circle", "outline": false } } }; (function(doc, head, body){ var coreCall = doc.createElement('script'); coreCall.src = interdeal.domains.js + 'core/4.6.1/accessibility.js'; coreCall.defer = true; coreCall.integrity = 'sha512-aAp5m6pQO8f6HIIF3V/7pXeoo9/VWZTij6e6vH0KoI8PJCEN4EVKvslxF8elAIMTd1znMDg0qwrelAJfDOu6KA=='; coreCall.crossOrigin = 'anonymous'; coreCall.setAttribute('data-cfasync', true ); body? body.appendChild(coreCall) : head.appendChild(coreCall); })(document, document.head, document.body); </script>
 
 <body>
     <header>
