@@ -86,7 +86,7 @@
                 }
 
                 echo '<div class="product-box">';
-                echo '<a id="upp" class="product-link" href="../producto.php?producto_id=' . $row['id'] . '">';
+                echo '<a id="upp" class="product-link" href="../producto.php?id=' . $row['id'] . '">';
                 
                 // Mostrar imagen almacenada como blob
                 echo '<img class="product-image" src="data:image/jpg;base64,' . base64_encode($row['imagen_1']) . '" alt="Imagen 1">';

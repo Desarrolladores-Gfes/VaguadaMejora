@@ -25,90 +25,77 @@
     <main>
     <?php
 
-function obtenerProductoPorId($id) {
-    $conexion = new mysqli('localhost', 'root', '', 'bdvaguada');
-
-    // Verificar la conexión
-    if ($conexion->connect_error) {
-        die("Error de conexión a la base de datos: " . $conexion->connect_error);
-    }
-
-    // Consulta SQL para obtener la fila del producto por su ID
-    $consulta = "SELECT * FROM productos WHERE id = $id";
-    $resultado = $conexion->query($consulta);
-
-    // Verificar si se obtuvo un resultado
-    if ($resultado->num_rows > 0) {
-        $fila = $resultado->fetch_assoc();
-
-        // Iniciar el contenedor principal
-        echo "<div class='producto'>";
+function obtenerProductoPorId() {
+    if (isset($_GET['id'])) {
         
-        // Mostrar la primera imagen junto con la información del producto
-        $imagenBase64 = base64_encode($fila['imagen_1']);
-        echo "<img src='data:image/jpg;base64,{$imagenBase64}' alt='Imagen 1'>";
+        $id = $_GET['id'];
 
-        // Contenedor para la descripción a la derecha
-        echo "<div class='descripcion'>";
         
-        // Mostrar la estructura del producto
-        echo "<h1>{$fila['nombre_producto']}</h1>";
-        echo "<p>{$fila['descripcion_producto']}</p>";
-        echo "<span>Precio: {$fila['precio_producto']}</span>";
-        
-        // Mostrar las categorías (niño, mujer, hombre)
-        $categorias = [];
-        if ($fila['infantil']) $categorias[] = 'Niño';
-        if ($fila['mujer']) $categorias[] = 'Mujer';
-        if ($fila['hombre']) $categorias[] = 'Hombre';
+        $conexion = new mysqli('localhost', 'root', '', 'bdvaguada');
 
-        if (!empty($categorias)) {
-            echo "<p>Categorías: " . implode(', ', $categorias) . "</p>";
+        
+        if ($conexion->connect_error) {
+            die("Error de conexión a la base de datos: " . $conexion->connect_error);
         }
 
-        // Cerrar el contenedor de descripción
-        echo "</div>";
+        
+        $consulta = "SELECT * FROM productos WHERE id = $id";
+        $resultado = $conexion->query($consulta);
 
-        // Cerrar el contenedor principal
-        echo "</div>";
+        
+        if ($resultado->num_rows > 0) {
+            $fila = $resultado->fetch_assoc();
 
-        // Mostrar las imágenes restantes debajo, de dos en dos
-        for ($i = 2; $i <= 9; $i += 2) {
-            $campoImagen1 = "imagen_$i";
-            $campoImagen2 = "imagen_" . ($i + 1);
             
-            // Verificar si las imágenes existen
-            if (!empty($fila[$campoImagen1]) || !empty($fila[$campoImagen2])) {
-                echo "<div class='producto'>";
-                
-                // Mostrar la imagen 1
-                if (!empty($fila[$campoImagen1])) {
-                    $imagenBase64_1 = base64_encode($fila[$campoImagen1]);
-                    echo "<img src='data:image/jpg;base64,{$imagenBase64_1}' alt='Imagen $i'>";
-                }
-                
-                // Mostrar la imagen 2
-                if (!empty($fila[$campoImagen2])) {
-                    $imagenBase64_2 = base64_encode($fila[$campoImagen2]);
-                    echo "<img src='data:image/jpg;base64,{$imagenBase64_2}' alt='Imagen " . ($i + 1) . "'>";
-                }
-
-                // Cerrar el contenedor de las imágenes restantes
-                echo "</div>";
+            echo "<div class='producto'>";
+            $imagenBase64 = base64_encode($fila['imagen_1']);
+            echo "<img src='data:image/jpg;base64,{$imagenBase64}' alt='Imagen 1'>";
+            echo "<div class='descripcion'>";
+            echo "<h1>{$fila['nombre_producto']}</h1>";
+            echo "<p>{$fila['descripcion_producto']}</p>";
+            echo "<span>Precio: {$fila['precio_producto']}</span>";
+            $categorias = [];
+            if ($fila['infantil']) $categorias[] = 'Niño';
+            if ($fila['mujer']) $categorias[] = 'Mujer';
+            if ($fila['hombre']) $categorias[] = 'Hombre';
+            if (!empty($categorias)) {
+                echo "<p>Categorías: " . implode(', ', $categorias) . "</p>";
             }
-        }
-    } else {
-        echo "No se encontró ningún producto con el ID $id";
-    }
+            echo "</div>";
+            echo "</div>";
 
-    // Cerrar la conexión
-    $conexion->close();
+            for ($i = 2; $i <= 9; $i += 2) {
+                $campoImagen1 = "imagen_$i";
+                $campoImagen2 = "imagen_" . ($i + 1);
+
+                if (!empty($fila[$campoImagen1]) || !empty($fila[$campoImagen2])) {
+                    echo "<div class='producto'>";
+                    if (!empty($fila[$campoImagen1])) {
+                        $imagenBase64_1 = base64_encode($fila[$campoImagen1]);
+                        echo "<img src='data:image/jpg;base64,{$imagenBase64_1}' alt='Imagen $i'>";
+                    }
+                    if (!empty($fila[$campoImagen2])) {
+                        $imagenBase64_2 = base64_encode($fila[$campoImagen2]);
+                        echo "<img src='data:image/jpg;base64,{$imagenBase64_2}' alt='Imagen " . ($i + 1) . "'>";
+                    }
+                    echo "</div>";
+                }
+            }
+
+        } else {
+            echo "No se encontró ningún producto con el ID $id";
+        }
+
+        $conexion->close();
+    } else {
+        echo "No se proporcionó un ID en la URL";
+    }
 }
 
-// Usar la función con un ID específico (reemplaza '1' con el ID que necesites)
-obtenerProductoPorId(1);
+obtenerProductoPorId();
 
 ?>
+
     </main>
     <footer>
 
