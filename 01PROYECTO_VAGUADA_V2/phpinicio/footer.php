@@ -18,7 +18,7 @@
                     <ul>
                         <li class="titulillo"><strong>Información</strong></li>
                         <li><a href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/Informacion001/comollegar.php">Cómo Llegar</a></li>
-                        <li><a href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/Informacion001/sobrenosotros.php">Sobre Nosotros</a></li>
+                        <li><a href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/Informacion001/comollegar.php">Sobre Nosotros</a></li>
                         <li><a target="_blank" href="/VaguadaMejora/01PROYECTO_VAGUADA_V2/Informacion001/tallas.html">Guía de tallas</a></li>
                     </ul>
                 </div></li>
